@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Stackly</title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="css/signup.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<section class="signup-page">
+
+    <!--==================================
+                LEFT
+    ===================================-->
+
+    <div class="signup-left">
+
+        <span class="section-tag">
+
+            Join Stackly
+
+        </span>
+
+        <h1>
+
+            Build.
+            Create.
+            Grow.
+
+        </h1>
+
+        <p>
+
+            Create your Stackly account to
+            manage projects, collaborate with
+            your team and access powerful
+            dashboards.
+
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <div>
+
+                    <h4>Secure Login</h4>
+
+                    <span>Advanced authentication</span>
+
+                </div>
+
+            </div>
+
+            <div class="feature">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <div>
+
+                    <h4>Analytics Dashboard</h4>
+
+                    <span>Real-time insights</span>
+
+                </div>
+
+            </div>
+
+            <div class="feature">
+
+                <i class="fa-solid fa-users"></i>
+
+                <div>
+
+                    <h4>Team Collaboration</h4>
+
+                    <span>Work together efficiently</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--==================================
+                RIGHT
+    ===================================-->
+
+    <div class="signup-right">
+
+        <form id="signupForm">
+
+            <div class="progress">
+
+                <div class="progress-bar"></div>
+
+            </div>
+
+            <!-- STEP INDICATOR -->
+
+            <div class="step-indicator">
+
+                <div class="step active">
+
+                    <span>1</span>
+
+                    Personal
+
+                </div>
+
+                <div class="step">
+
+                    <span>2</span>
+
+                    Security
+
+                </div>
+
+            </div>
+
+            <!--==================================
+                    STEP 1
+            ===================================-->
+
+            <div class="form-step active"
+                id="step1">
+
+                <h2>
+
+                    Create Account
+
+                </h2>
+
+                <p class="subtitle">
+
+                    Tell us about yourself.
+
+                </p>
+
+                <div class="grid">
+
+                    <div class="input-box">
+
+                        <label>
+
+                            First Name
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            placeholder="John">
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>
+
+                            Last Name
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            placeholder="David">
+
+                    </div>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>
+
+                        Email Address
+
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="john@example.com">
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>
+
+                        Phone Number
+
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        maxlength="10"
+                        placeholder="+91 9876543210">
+
+                </div>
+
+                <button
+                    type="button"
+                    class="next-btn"
+                    id="nextBtn">
+
+                    Continue
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+            <!--==================================
+                    STEP 2
+            ===================================-->
+
+            <div class="form-step"
+                id="step2">
+
+                <h2>
+
+                    Secure Your Account
+
+                </h2>
+
+                <p class="subtitle">
+
+                    Create a strong password.
+
+                </p>
+
+                <div class="input-box">
+
+                    <label>
+
+                        Password
+
+                    </label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create password">
+
+                        <button
+                            type="button"
+                            class="eye-btn"
+                            id="togglePassword">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>
+
+                        Confirm Password
+
+                    </label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm password">
+
+                        <button
+                            type="button"
+                            class="eye-btn"
+                            id="toggleConfirm">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- PASSWORD RULES -->
+
+                <div class="password-rules">
+
+                    <p id="length">
+
+                        ✖ Minimum 8 Characters
+
+                    </p>
+
+                    <p id="upper">
+
+                        ✖ Uppercase Letter
+
+                    </p>
+
+                    <p id="lower">
+
+                        ✖ Lowercase Letter
+
+                    </p>
+
+                    <p id="number">
+
+                        ✖ Number
+
+                    </p>
+
+                    <p id="symbol">
+
+                        ✖ Special Character
+
+                    </p>
+
+                    <p id="match">
+
+                        ✖ Password Match
+
+                    </p>
+
+                </div>
+
+                <!-- ROLE -->
+
+                <h3 class="role-title">
+
+                    Select Account Type
+
+                </h3>
+
+                <div class="role-grid">
+
+                    <label class="role-card active">
+
+                        <input
+                            type="radio"
+                            name="role"
+                            value="user"
+                            checked>
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <h4>User</h4>
+
+                        <span>Personal Dashboard</span>
+
+                    </label>
+
+                    <label class="role-card">
+
+                        <input
+                            type="radio"
+                            name="role"
+                            value="admin">
+
+                        <i class="fa-solid fa-user-gear"></i>
+
+                        <h4>Admin</h4>
+
+                        <span>Manage Everything</span>
+
+                    </label>
+
+                </div>
+
+                <!-- CHECKBOX -->
+
+                <label class="agree">
+
+                    <input
+                        type="checkbox"
+                        id="agree">
+
+                    I agree with the
+
+                    <a href="#">
+
+                        Terms & Conditions
+
+                    </a>
+
+                </label>
+
+                <!-- BUTTONS -->
+
+                <div class="btn-group">
+
+                    <button
+                        type="button"
+                        class="back-btn">
+
+                        Back
+
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="signup-btn">
+
+                        Create Account
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p class="login-link">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login
+
+                </a>
+
+            </p>
+
+            <p
+                id="message"
+                class="message">
+
+            </p>
+
+        </form>
+
+    </div>
+
+</section>
+
+<script src="js/signup.js"></script>
+
+</body>
+
+</html>

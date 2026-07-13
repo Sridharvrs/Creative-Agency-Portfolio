@@ -1,0 +1,889 @@
+/*==================================================
+                RESET
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --bg:#0b0d10;
+    --surface:#15181d;
+    --surface2:#1d2128;
+
+    --text:#ffffff;
+    --muted:#9ca3af;
+
+    --accent:#ff6b00;
+    --accent2:#ff944d;
+
+    --border:rgba(255,255,255,.08);
+
+    --radius:24px;
+
+    --transition:.35s ease;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+/*==================================================
+            BACKGROUND GLOW
+==================================================*/
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at 15% 15%,rgba(255,107,0,.18),transparent 28%),
+
+    radial-gradient(circle at 85% 10%,rgba(255,255,255,.05),transparent 20%),
+
+    radial-gradient(circle at 80% 80%,rgba(255,107,0,.12),transparent 25%);
+
+    z-index:-2;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+
+    linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+
+    background-size:60px 60px;
+
+    z-index:-1;
+
+}
+
+/*==================================================
+                MAIN
+==================================================*/
+
+.signup-page{
+
+    min-height:100vh;
+
+    padding:50px 8%;
+
+    display:grid;
+
+    grid-template-columns:1.05fr .95fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+/*==================================================
+                LEFT
+==================================================*/
+
+.signup-left{
+
+    max-width:620px;
+
+}
+
+.section-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:12px 22px;
+
+    border-radius:100px;
+
+    border:1px solid var(--border);
+
+    background:rgba(255,255,255,.04);
+
+    color:var(--accent);
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.section-tag::before{
+
+    content:"";
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:var(--accent);
+
+}
+
+.signup-left h1{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:78px;
+
+    line-height:.95;
+
+    letter-spacing:-3px;
+
+    margin:30px 0;
+
+}
+
+.signup-left p{
+
+    font-size:18px;
+
+    color:var(--muted);
+
+    line-height:34px;
+
+    margin-bottom:45px;
+
+}
+
+/*==================================================
+                FEATURES
+==================================================*/
+
+.features{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.feature{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:center;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid var(--border);
+
+    transition:var(--transition);
+
+}
+
+.feature:hover{
+
+    transform:translateX(8px);
+
+    border-color:rgba(255,107,0,.35);
+
+}
+
+.feature i{
+
+    width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,107,0,.12);
+
+    color:var(--accent);
+
+    font-size:20px;
+
+}
+
+.feature h4{
+
+    font-size:18px;
+
+    margin-bottom:6px;
+
+}
+
+.feature span{
+
+    color:var(--muted);
+
+    font-size:14px;
+
+}
+
+/*==================================================
+            RIGHT
+==================================================*/
+
+.signup-right{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+/*==================================================
+            GLASS CARD
+==================================================*/
+
+#signupForm{
+
+    width:100%;
+
+    max-width:520px;
+
+    padding:42px;
+
+    border-radius:28px;
+
+    background:rgba(20,23,28,.92);
+
+    backdrop-filter:blur(24px);
+
+    border:1px solid var(--border);
+
+    box-shadow:
+
+    0 30px 70px rgba(0,0,0,.45),
+
+    inset 0 1px 0 rgba(255,255,255,.04);
+
+}
+
+/*==================================================
+            PROGRESS BAR
+==================================================*/
+
+.progress{
+
+    width:100%;
+
+    height:8px;
+
+    background:#252a31;
+
+    border-radius:100px;
+
+    overflow:hidden;
+
+    margin-bottom:30px;
+
+}
+
+.progress-bar{
+
+    width:50%;
+
+    height:100%;
+
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+
+    border-radius:100px;
+
+    transition:.4s;
+
+}
+
+/*==================================================
+            STEP INDICATOR
+==================================================*/
+
+.step-indicator{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:35px;
+
+}
+
+.step{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#777;
+
+    font-weight:600;
+
+}
+
+.step span{
+
+    width:38px;
+
+    height:38px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:1px solid var(--border);
+
+    background:#20242a;
+
+}
+
+.step.active{
+
+    color:#fff;
+
+}
+
+.step.active span{
+
+    background:var(--accent);
+
+    border-color:var(--accent);
+
+}
+
+/*==================================================
+            FORM TITLES
+==================================================*/
+
+.form-step{
+
+    display:none;
+
+}
+
+.form-step.active{
+
+    display:block;
+
+}
+
+.form-step h2{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    color:var(--muted);
+
+    margin-bottom:30px;
+
+}
+
+/*==================================================
+            GRID
+==================================================*/
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+}
+
+/*==================================================
+            RESPONSIVE
+==================================================*/
+
+@media(max-width:1100px){
+
+.signup-page{
+
+grid-template-columns:1fr;
+
+gap:60px;
+
+}
+
+.signup-left{
+
+text-align:center;
+
+margin:auto;
+
+}
+
+.features{
+
+align-items:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.signup-page{
+
+padding:90px 20px 40px;
+
+}
+
+.signup-left h1{
+
+font-size:48px;
+
+letter-spacing:-2px;
+
+}
+
+.signup-left p{
+
+font-size:16px;
+
+line-height:30px;
+
+}
+
+#signupForm{
+
+padding:30px 22px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+.step{
+
+font-size:14px;
+
+}
+
+.form-step h2{
+
+font-size:32px;
+
+}
+
+}
+
+/*==================================================
+                INPUT BOX
+==================================================*/
+
+.input-box{
+    margin-bottom:22px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:10px;
+    font-size:14px;
+    font-weight:600;
+    color:#e5e7eb;
+}
+
+.input-box input{
+    width:100%;
+    height:58px;
+    padding:0 18px;
+    border:1px solid var(--border);
+    border-radius:16px;
+    background:#111418;
+    color:#fff;
+    font-size:15px;
+    outline:none;
+    transition:var(--transition);
+}
+
+.input-box input::placeholder{
+    color:#777;
+}
+
+.input-box input:focus{
+    border-color:var(--accent);
+    box-shadow:0 0 0 4px rgba(255,107,0,.15);
+}
+
+/*==================================================
+            PASSWORD BOX
+==================================================*/
+
+.password-box{
+    position:relative;
+}
+
+.password-box input{
+    padding-right:60px;
+}
+
+.eye-btn{
+    position:absolute;
+    top:50%;
+    right:16px;
+    transform:translateY(-50%);
+    width:40px;
+    height:40px;
+    border:none;
+    background:none;
+    color:#999;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.eye-btn:hover{
+    color:var(--accent);
+}
+
+/*==================================================
+            PASSWORD RULES
+==================================================*/
+
+.password-rules{
+    margin:18px 0 30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px 20px;
+}
+
+.password-rules p{
+    font-size:13px;
+    color:#7d7d7d;
+    transition:.3s;
+}
+
+.password-rules p.valid{
+    color:#4ade80;
+}
+
+.password-rules p.invalid{
+    color:#ff5b5b;
+}
+
+/*==================================================
+            ROLE TITLE
+==================================================*/
+
+.role-title{
+    margin-bottom:18px;
+    font-size:18px;
+}
+
+/*==================================================
+            ROLE GRID
+==================================================*/
+
+.role-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+    margin-bottom:30px;
+}
+
+/*==================================================
+            ROLE CARD
+==================================================*/
+
+.role-card{
+    position:relative;
+    padding:26px 20px;
+    border-radius:20px;
+    background:#15181d;
+    border:1px solid var(--border);
+    cursor:pointer;
+    transition:var(--transition);
+    text-align:center;
+}
+
+.role-card input{
+    display:none;
+}
+
+.role-card i{
+    font-size:34px;
+    color:var(--accent);
+    margin-bottom:18px;
+}
+
+.role-card h4{
+    margin-bottom:8px;
+    font-size:20px;
+}
+
+.role-card span{
+    font-size:14px;
+    color:var(--muted);
+}
+
+.role-card:hover{
+    border-color:var(--accent);
+    transform:translateY(-5px);
+}
+
+.role-card.active{
+    border-color:var(--accent);
+    background:rgba(255,107,0,.08);
+}
+
+/*==================================================
+            TERMS
+==================================================*/
+
+.agree{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin-bottom:32px;
+    font-size:14px;
+    color:#d6d6d6;
+    line-height:24px;
+}
+
+.agree input{
+    accent-color:var(--accent);
+    margin-top:4px;
+}
+
+.agree a{
+    color:var(--accent);
+    text-decoration:none;
+}
+
+.agree a:hover{
+    text-decoration:underline;
+}
+
+/*==================================================
+            BUTTON GROUP
+==================================================*/
+
+.btn-group{
+    display:flex;
+    gap:16px;
+}
+
+.back-btn,
+.signup-btn,
+.next-btn{
+
+    height:58px;
+    border:none;
+    border-radius:16px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:700;
+    transition:var(--transition);
+
+}
+
+.back-btn{
+
+    flex:1;
+
+    background:#23272f;
+
+    color:#fff;
+
+}
+
+.back-btn:hover{
+
+    background:#2d333d;
+
+}
+
+.signup-btn{
+
+    flex:2;
+
+    background:linear-gradient(135deg,var(--accent),#ff914d);
+
+    color:#fff;
+
+}
+
+.signup-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 16px 35px rgba(255,107,0,.35);
+
+}
+
+.next-btn{
+
+    width:100%;
+
+    background:linear-gradient(135deg,var(--accent),#ff914d);
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:8px;
+
+}
+
+.next-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 16px 35px rgba(255,107,0,.35);
+
+}
+
+/*==================================================
+            LOGIN LINK
+==================================================*/
+
+.login-link{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    color:#a3a3a3;
+
+}
+
+.login-link a{
+
+    color:var(--accent);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.login-link a:hover{
+
+    text-decoration:underline;
+
+}
+
+/*==================================================
+            MESSAGE
+==================================================*/
+
+.message{
+
+    margin-top:18px;
+
+    text-align:center;
+
+    min-height:22px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.message.success{
+
+    color:#4ade80;
+
+}
+
+.message.error{
+
+    color:#ff5b5b;
+
+}
+
+/*==================================================
+            MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.password-rules{
+
+grid-template-columns:1fr;
+
+}
+
+.role-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.btn-group{
+
+flex-direction:column;
+
+}
+
+.back-btn,
+.signup-btn{
+
+width:100%;
+
+}
+
+}

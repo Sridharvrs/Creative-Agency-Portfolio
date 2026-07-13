@@ -1,0 +1,694 @@
+/*==================================================
+                GOOGLE FONT
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --bg:#0b0d10;
+    --card:#15181d;
+    --card2:#1c2026;
+
+    --text:#ffffff;
+    --muted:#9ca3af;
+
+    --accent:#ff6b00;
+    --accent2:#ff8f3d;
+
+    --border:rgba(255,255,255,.08);
+
+    --radius:24px;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+/*==================================================
+                BACKGROUND
+==================================================*/
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at 20% 20%,rgba(255,107,0,.22),transparent 28%),
+    radial-gradient(circle at 80% 10%,rgba(255,107,0,.12),transparent 22%),
+    radial-gradient(circle at 90% 90%,rgba(255,255,255,.04),transparent 20%);
+
+    z-index:-2;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+
+    linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+
+    background-size:60px 60px;
+
+    z-index:-1;
+
+}
+
+/*==================================================
+                LOGIN PAGE
+==================================================*/
+
+.login-page{
+
+    width:100%;
+
+    min-height:100vh;
+
+    padding:50px 8%;
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+/*==================================================
+                LEFT
+==================================================*/
+
+.login-left{
+
+    max-width:650px;
+
+}
+
+.tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:12px 20px;
+
+    border-radius:100px;
+
+    border:1px solid var(--border);
+
+    background:rgba(255,255,255,.04);
+
+    color:var(--accent);
+
+    font-size:13px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.tag::before{
+
+    content:"";
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:var(--accent);
+
+}
+
+.login-left h1{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:78px;
+
+    line-height:.95;
+
+    margin:30px 0;
+
+    letter-spacing:-3px;
+
+}
+
+.login-left p{
+
+    font-size:19px;
+
+    color:var(--muted);
+
+    line-height:36px;
+
+    margin-bottom:45px;
+
+}
+
+/*==================================================
+                FEATURES
+==================================================*/
+
+.feature-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.feature-list div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    font-size:17px;
+
+    color:#ddd;
+
+}
+
+.feature-list i{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,107,0,.15);
+
+    color:var(--accent);
+
+}
+
+/*==================================================
+            RIGHT CARD
+==================================================*/
+
+.login-right{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+#loginForm{
+
+    width:100%;
+
+    max-width:470px;
+
+    padding:45px;
+
+    border-radius:28px;
+
+    background:rgba(22,25,31,.92);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid var(--border);
+
+    box-shadow:
+
+    0 30px 60px rgba(0,0,0,.45),
+
+    inset 0 1px 0 rgba(255,255,255,.04);
+
+}
+
+#loginForm h2{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:42px;
+
+    margin-bottom:35px;
+
+}
+
+/*==================================================
+            RESPONSIVE
+==================================================*/
+
+@media(max-width:1100px){
+
+.login-page{
+
+grid-template-columns:1fr;
+
+gap:60px;
+
+}
+
+.login-left{
+
+text-align:center;
+
+margin:auto;
+
+}
+
+.feature-list{
+
+align-items:center;
+
+}
+
+.login-right{
+
+justify-content:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.login-page{
+
+padding:100px 20px 40px;
+
+}
+
+.login-left h1{
+
+font-size:48px;
+
+letter-spacing:-2px;
+
+}
+
+.login-left p{
+
+font-size:16px;
+
+line-height:30px;
+
+}
+
+#loginForm{
+
+padding:30px 24px;
+
+}
+
+#loginForm h2{
+
+font-size:32px;
+
+}
+
+}
+
+/* ---------------------------------------------------- */
+
+/*==================================================
+                INPUT BOX
+==================================================*/
+
+.input-box{
+
+    margin-bottom:26px;
+
+}
+
+.input-box label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#d9d9d9;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    height:58px;
+
+    padding:0 18px;
+
+    border-radius:16px;
+
+    border:1px solid var(--border);
+
+    background:#111418;
+
+    color:#fff;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.35s;
+
+}
+
+.input-box input::placeholder{
+
+    color:#777;
+
+}
+
+.input-box input:focus{
+
+    border-color:var(--accent);
+
+    box-shadow:0 0 0 4px rgba(255,107,0,.15);
+
+}
+
+/*==================================================
+            PASSWORD INPUT
+==================================================*/
+
+.password-wrapper{
+
+    position:relative;
+
+}
+
+.password-wrapper input{
+
+    padding-right:60px;
+
+}
+
+.eye-btn{
+
+    position:absolute;
+
+    top:50%;
+
+    right:16px;
+
+    transform:translateY(-50%);
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    background:none;
+
+    color:#9d9d9d;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.eye-btn:hover{
+
+    color:var(--accent);
+
+}
+
+/*==================================================
+            PASSWORD RULES
+==================================================*/
+
+.password-rules{
+
+    margin-top:16px;
+
+    display:grid;
+
+    gap:8px;
+
+}
+
+.password-rules p{
+
+    font-size:13px;
+
+    color:#8e8e8e;
+
+    transition:.3s;
+
+}
+
+.password-rules p.valid{
+
+    color:#4ade80;
+
+}
+
+.password-rules p.invalid{
+
+    color:#ff5b5b;
+
+}
+
+/*==================================================
+                ROLE BOX
+==================================================*/
+
+.role-box{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+    margin:28px 0;
+
+}
+
+.role-box label{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    height:58px;
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    background:#111418;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.role-box label:hover{
+
+    border-color:var(--accent);
+
+}
+
+.role-box input{
+
+    accent-color:var(--accent);
+
+}
+
+/*==================================================
+            REMEMBER / FORGOT
+==================================================*/
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+    font-size:14px;
+
+}
+
+.options label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#d0d0d0;
+
+}
+
+.options input{
+
+    accent-color:var(--accent);
+
+}
+
+.options a{
+
+    color:var(--accent);
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.options a:hover{
+
+    color:#fff;
+
+}
+
+/*==================================================
+                LOGIN BUTTON
+==================================================*/
+
+.login-btn{
+
+    width:100%;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(135deg,var(--accent),#ff8f3d);
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 18px 35px rgba(255,107,0,.35);
+
+}
+
+/*==================================================
+                MESSAGE
+==================================================*/
+
+.message{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    min-height:22px;
+
+}
+
+.message.success{
+
+    color:#4ade80;
+
+}
+
+.message.error{
+
+    color:#ff5b5b;
+
+}
+
+/*==================================================
+            MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.role-box{
+
+grid-template-columns:1fr;
+
+}
+
+.options{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+.login-btn{
+
+height:54px;
+
+}
+
+}

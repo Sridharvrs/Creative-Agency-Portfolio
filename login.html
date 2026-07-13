@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Stackly</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/login.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<section class="login-page">
+
+    <!-- LEFT -->
+
+    <div class="login-left">
+
+        <span class="tag">
+
+            Welcome Back
+
+        </span>
+
+        <h1>
+
+            Access Your
+            Dashboard
+
+        </h1>
+
+        <p>
+
+            Login to manage your projects,
+            monitor progress and collaborate
+            with the Stackly team.
+
+        </p>
+
+        <div class="feature-list">
+
+            <div>
+
+                <i class="fa-solid fa-check"></i>
+
+                Secure Authentication
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-check"></i>
+
+                User & Admin Access
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-check"></i>
+
+                Encrypted Credentials
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="login-right">
+
+        <form id="loginForm">
+
+            <h2>
+
+                Sign In
+
+            </h2>
+
+            <!-- EMAIL -->
+
+            <div class="input-box">
+
+                <label>Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+
+            </div>
+
+            <!-- PASSWORD -->
+
+            <div class="input-box">
+
+                <label>Password</label>
+
+                <div class="password-wrapper">
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter password"
+                        required>
+
+                    <button
+                        type="button"
+                        class="eye-btn"
+                        id="togglePassword">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="password-rules">
+
+                    <p id="length">
+
+                        ✖ Minimum 8 characters
+
+                    </p>
+
+                    <p id="upper">
+
+                        ✖ Uppercase letter
+
+                    </p>
+
+                    <p id="lower">
+
+                        ✖ Lowercase letter
+
+                    </p>
+
+                    <p id="number">
+
+                        ✖ Number
+
+                    </p>
+
+                    <p id="symbol">
+
+                        ✖ Special character
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ROLE -->
+
+            <div class="role-box">
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="role"
+                        value="user"
+                        checked>
+
+                    User
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="role"
+                        value="admin">
+
+                    Admin
+
+                </label>
+
+            </div>
+
+            <!-- OPTIONS -->
+
+            <div class="options">
+
+                <label>
+
+                    <input
+                        type="checkbox">
+
+                    Remember Me
+
+                </label>
+
+                <a href="#">
+
+                    Forgot Password?
+
+                </a>
+
+            </div>
+
+            <button
+                class="login-btn"
+                type="submit">
+
+                Login
+
+            </button>
+
+            <p
+                class="message"
+                id="message">
+
+            </p>
+
+        </form>
+
+    </div>
+
+</section>
+
+<script src="js/login.js"></script>
+
+</body>
+
+</html>
