@@ -1,7 +1,7 @@
 /* ============ WORK — filterable grid ============ */
 .work-hero {
   min-height: 70vh;
-  background-image: url(/images/background-3.webp);
+  background-image: url(images/background-3.webp);
     background-size: cover;
     background-repeat: no-repeat;
   display: flex;
