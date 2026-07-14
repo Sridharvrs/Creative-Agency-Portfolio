@@ -7,7 +7,10 @@
     <title>Stackly — Creative Agency</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -16,30 +19,18 @@
     <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
-    
     <nav class="nav" id="nav">
+      <a href="index.html" class="nav-logo">
+        <img src="images/stackly_logo.webp" alt="Stackly Logo" />
+      </a>
 
-    <a href="index.html" class="nav-logo">
-
-    <img
-        src="images/stackly_logo.webp"
-        alt="Stackly Logo">
-
-</a>
-
-    <ul class="nav-links" id="navLinks">
+      <ul class="nav-links" id="navLinks">
         <!-- Mobile Header -->
 
         <li class="mobile-header">
-
-            <a href="index.html" class="mobile-logo">
-
-                <img
-                    src="images/logo.webp"
-                    alt="Stackly Logo">
-
-            </a>
-
+          <a href="index.html" class="mobile-logo">
+            <img src="images/logo.webp" alt="Stackly Logo" />
+          </a>
         </li>
 
         <li><a href="index.html" class="active">Home</a></li>
@@ -55,157 +46,121 @@
         <!-- Mobile Only -->
 
         <li class="mobile-only">
-
-            <a href="login.html" class="mobile-btn">
-
-                Start a Project
-
-            </a>
-
+          <a href="login.html" class="mobile-btn"> Start a Project </a>
         </li>
 
         <li class="mobile-contact">
+          <h4>Contact</h4>
 
-            <h4>Contact</h4>
+          <p>hello@stackly.studio</p>
 
-            <p>hello@stackly.studio</p>
+          <p>+1 (415) 555-0142</p>
 
-            <p>+1 (415) 555-0142</p>
-
-            <p>San Francisco, USA</p>
-
+          <p>San Francisco, USA</p>
         </li>
+      </ul>
 
-    </ul>
+      <!-- Desktop Only -->
 
-    <!-- Desktop Only -->
+      <a href="login.html" class="nav-cta"> Start a Project </a>
 
-    <a href="login.html" class="nav-cta">
-
-        Start a Project
-
-    </a>
-
-    <button class="nav-toggle" id="navToggle">
-
+      <button class="nav-toggle" id="navToggle">
         <span></span>
         <span></span>
         <span></span>
+      </button>
+    </nav>
 
-    </button>
+    <div class="menu-overlay" id="menuOverlay"></div>
 
-</nav>
+    <header class="hero">
+      <div class="hero-grain"></div>
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
 
-<div class="menu-overlay" id="menuOverlay"></div>
-
-<header class="hero">
-
-    <div class="hero-grain"></div>
-    <div class="hero-orb orb-1"></div>
-    <div class="hero-orb orb-2"></div>
-
-    <div class="hero-wrapper">
-
+      <div class="hero-wrapper">
         <!-- LEFT -->
 
         <div class="hero-content">
+          <span class="hero-eyebrow"> Creative studio · est. 2014 </span>
 
-            <span class="hero-eyebrow">
-                Creative studio · est. 2014
-            </span>
+          <h1 class="hero-title">
+            <span class="line"><span>We build</span></span>
+            <span class="line"><span>brands that</span></span>
+            <span class="line"
+              ><span>refuse to be <em>ignored</em>.</span></span
+            >
+          </h1>
 
-            <h1 class="hero-title">
-                <span class="line"><span>We build</span></span>
-                <span class="line"><span>brands that</span></span>
-                <span class="line"><span>refuse to be <em>ignored</em>.</span></span>
-            </h1>
+          <p class="hero-sub">
+            A multidisciplinary design studio crafting identities, digital
+            products, and films for ambitious teams who move culture forward.
+          </p>
 
-            <p class="hero-sub">
-                A multidisciplinary design studio crafting identities,
-                digital products, and films for ambitious teams who move
-                culture forward.
-            </p>
+          <div class="hero-actions">
+            <a href="error.html" class="btn btn-primary"> View our work → </a>
 
-            <div class="hero-actions">
-                <a href="error.html" class="btn btn-primary">
-                    View our work →
-                </a>
-
-                <a href="error.html" class="btn btn-ghost">
-                    Let's talk
-                </a>
-            </div>
-
+            <a href="error.html" class="btn btn-ghost"> Let's talk </a>
+          </div>
         </div>
 
         <!-- RIGHT -->
 
         <div class="hero-visual">
+          <div class="hero-main">
+            <img src="images/img-1-5-office.webp" />
+          </div>
 
-            <div class="hero-main">
+          <div class="hero-card card-top">
+            <img src="images/img-2-teach.webp" />
+          </div>
 
-                <img src="images/img-1-5-office.webp">
-
-            </div>
-
-            <div class="hero-card card-top">
-
-                <img src="images/img-2-teach.webp">
-
-            </div>
-
-            <div class="hero-card card-bottom">
-
-                <img src="images/img-3.webp">
-
-            </div>
-
+          <div class="hero-card card-bottom">
+            <img src="images/img-3.webp" />
+          </div>
         </div>
+      </div>
 
-    </div>
-
-    <div class="hero-scroll">
-
+      <div class="hero-scroll">
         <span>Scroll</span>
 
         <div class="hero-scroll-line"></div>
-
-    </div>
-
-</header>
+      </div>
+    </header>
 
     <!-- SECTION-2 -->
 
     <section class="marquee-band">
       <div class="marquee-track">
-        <span>Brand Strategy</span><span>Identity Design</span><span>Web Design</span>
-        <span>Motion</span><span>Art Direction</span><span>Photography</span>
-        <span>Brand Strategy</span><span>Identity Design</span><span>Web Design</span>
-        <span>Motion</span><span>Art Direction</span><span>Photography</span>
+        <span>Brand Strategy</span><span>Identity Design</span
+        ><span>Web Design</span> <span>Motion</span><span>Art Direction</span
+        ><span>Photography</span> <span>Brand Strategy</span
+        ><span>Identity Design</span><span>Web Design</span> <span>Motion</span
+        ><span>Art Direction</span><span>Photography</span>
       </div>
     </section>
 
     <!-- SECTION-3 -->
 
     <section class="stats">
-      <div class="stats-head ">
+      <div class="stats-head">
         <span class="eyebrow section-tag">By the numbers</span>
         <h2>A decade of measurable craft.</h2>
       </div>
       <div class="stats-grid">
-        <div class="stat ">
+        <div class="stat">
           <div class="stat-num" data-count="240">0</div>
           <div class="stat-label">Projects shipped</div>
         </div>
-        <div class="stat " >
+        <div class="stat">
           <div class="stat-num" data-count="68">0</div>
           <div class="stat-label">Awards won</div>
         </div>
-        <div class="stat " >
+        <div class="stat">
           <div class="stat-num" data-count="42">0</div>
           <div class="stat-label">Team members</div>
         </div>
-        <div class="stat " >
+        <div class="stat">
           <div class="stat-num" data-count="12">0</div>
           <div class="stat-label">Countries served</div>
         </div>
@@ -213,564 +168,461 @@
     </section>
 
     <!-- SECTION-4 -->
-     <section class="portfolio-slider">
-
-    <div class="project-card">
-        <img src="images/img-4-10-Luxury Residence.webp" alt="">
+    <section class="portfolio-slider">
+      <div class="project-card">
+        <img src="images/img-4-10-Luxury Residence.webp" alt="" />
         <div class="overlay">
-            <span>Brand Identity</span>
-            <h3>Luxury Residence</h3>
+          <span>Brand Identity</span>
+          <h3>Luxury Residence</h3>
         </div>
-    </div>
+      </div>
 
-    <div class="project-card">
-        <img src="images/Creative_workspace.webp" alt="">
+      <div class="project-card">
+        <img src="images/Creative_workspace.webp" alt="" />
         <div class="overlay">
-            <span>Creative Workspace</span>
-            <h3>Stackly Office</h3>
+          <span>Creative Workspace</span>
+          <h3>Stackly Office</h3>
         </div>
-    </div>
+      </div>
 
-    <div class="project-card">
-        <img src="images/Interior_design.webp" alt="">
+      <div class="project-card">
+        <img src="images/Interior_design.webp" alt="" />
         <div class="overlay">
-            <span>Interior Design</span>
-            <h3>Minimal Living</h3>
+          <span>Interior Design</span>
+          <h3>Minimal Living</h3>
         </div>
-    </div>
+      </div>
+    </section>
 
-</section>
-
-<!-- SECTION-5 -->
+    <!-- SECTION-5 -->
 
     <section class="showcase">
-
-    <div class="showcase-head">
-
+      <div class="showcase-head">
         <span class="eyebrow section-tag">Featured Work</span>
 
         <h2>Selected work.</h2>
 
         <a href="error.html" class="link-arrow">
-            All Projects <span>→</span>
+          All Projects <span>→</span>
         </a>
+      </div>
 
-    </div>
-
-    <div class="showcase-grid">
-
+      <div class="showcase-grid">
         <!-- Project 1 -->
 
         <article class="card card-wide">
+          <div class="card-img">
+            <img src="images/AI_platform.webp" alt="StacklyFlow AI" />
+          </div>
 
-            <div class="card-img">
+          <div class="card-meta">
+            <span class="project-type">AI Platform</span>
 
-                <img src="images/AI_platform.webp" alt="StacklyFlow AI">
+            <h3>StacklyFlow AI</h3>
 
-            </div>
-
-            <div class="card-meta">
-
-                <span class="project-type">AI Platform</span>
-
-                <h3>StacklyFlow AI</h3>
-
-                <p>Brand Identity · UI/UX · Development</p>
-
-            </div>
-
+            <p>Brand Identity · UI/UX · Development</p>
+          </div>
         </article>
 
         <!-- Project 2 -->
 
         <article class="card">
+          <div class="card-img">
+            <img src="images/Vault Finance.webp" alt="Vault Finance" />
+          </div>
 
-            <div class="card-img">
+          <div class="card-meta">
+            <span class="project-type">FinTech</span>
 
-                <img src="images/Vault Finance.webp" alt="Vault Finance">
+            <h3>Vault Finance</h3>
 
-            </div>
-
-            <div class="card-meta">
-
-                <span class="project-type">FinTech</span>
-
-                <h3>Vault Finance</h3>
-
-                <p>Dashboard Design · Web App</p>
-
-            </div>
-
+            <p>Dashboard Design · Web App</p>
+          </div>
         </article>
 
         <!-- Project 3 -->
 
         <article class="card">
+          <div class="card-img">
+            <img src="images/Pixel Studio.webp" alt="Pixel Studio" />
+          </div>
 
-            <div class="card-img">
+          <div class="card-meta">
+            <span class="project-type">Creative Studio</span>
 
-                <img src="images/Pixel Studio.webp" alt="Pixel Studio">
+            <h3>Pixel Studio</h3>
 
-            </div>
-
-            <div class="card-meta">
-
-                <span class="project-type">Creative Studio</span>
-
-                <h3>Pixel Studio</h3>
-
-                <p>Brand Strategy · Website</p>
-
-            </div>
-
+            <p>Brand Strategy · Website</p>
+          </div>
         </article>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- SECTION-6 -->
-<section class="split-showcase">
-
-    <!-- Section 1 -->
-    <div class="split-row">
-
+    <!-- SECTION-6 -->
+    <section class="split-showcase">
+      <!-- Section 1 -->
+      <div class="split-row">
         <div class="split-image">
-            <img src="images/Finance.webp" alt="">
+          <img src="images/Finance.webp" alt="" />
         </div>
 
         <div class="split-content">
-            <span class="section-tag">Brand Identity</span>
+          <span class="section-tag">Brand Identity</span>
 
-            <h2>Creating brands that leave a lasting impression.</h2>
+          <h2>Creating brands that leave a lasting impression.</h2>
 
-            <p>
-                We blend strategy, storytelling, and visual design to
-                create memorable identities that inspire trust and
-                connect with audiences worldwide.
-            </p>
+          <p>
+            We blend strategy, storytelling, and visual design to create
+            memorable identities that inspire trust and connect with audiences
+            worldwide.
+          </p>
 
-            <a href="error.html" class="split-btn">
-                Explore Project →
-            </a>
-
+          <a href="error.html" class="split-btn"> Explore Project → </a>
         </div>
+      </div>
 
-    </div>
+      <!-- Section 2 -->
 
-    <!-- Section 2 -->
-
-    <div class="split-row reverse">
-
+      <div class="split-row reverse">
         <div class="split-image">
-            <img src="images/Digital Experience.webp" alt="">
+          <img src="images/Digital Experience.webp" alt="" />
         </div>
 
         <div class="split-content">
+          <span class="section-tag">Digital Experience</span>
 
-            <span class="section-tag">Digital Experience</span>
+          <h2>Beautiful interfaces built for modern businesses.</h2>
 
-            <h2>Beautiful interfaces built for modern businesses.</h2>
+          <p>
+            Every interaction is carefully crafted to deliver seamless user
+            experiences across every device.
+          </p>
 
-            <p>
-                Every interaction is carefully crafted to deliver
-                seamless user experiences across every device.
-            </p>
-
-            <a href="error.html" class="split-btn">
-                View Case Study →
-            </a>
-
+          <a href="error.html" class="split-btn"> View Case Study → </a>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- SECTION-7 -->
-<section class="before-after">
-
-    <div class="section-heading">
+    <!-- SECTION-7 -->
+    <section class="before-after">
+      <div class="section-heading">
         <span class="section-tag">Transformation</span>
         <h2>From Ordinary to Extraordinary</h2>
         <p>
-            Every project begins with potential. We transform ideas into
-            premium digital experiences through strategy, design, and inStacklytion.
+          Every project begins with potential. We transform ideas into premium
+          digital experiences through strategy, design, and inStacklytion.
         </p>
-    </div>
+      </div>
 
-    <div class="compare-container">
-
+      <div class="compare-container">
         <!-- Before -->
-        <img
-            src="images/img-4-10-Luxury Residence.webp"
-            alt="Before"
-        >
+        <img src="images/img-4-10-Luxury Residence.webp" alt="Before" />
 
         <!-- After -->
         <div class="compare-after">
-
-            <img
-                src="images/img-1-5-office.webp"
-                alt="After"
-            >
-
+          <img src="images/img-1-5-office.webp" alt="After" />
         </div>
 
         <!-- Drag Line -->
         <div class="compare-line">
-            <span>⇆</span>
+          <span>⇆</span>
         </div>
 
-        <input
-            type="range"
-            min="0"
-            max="100"
-            value="50"
-            class="slider"
-        >
+        <input type="range" min="0" max="100" value="50" class="slider" />
 
         <div class="label before-label">Before</div>
         <div class="label after-label">After</div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- SECTION-8 -->
-<section class="timeline">
-
-    <div class="timeline-heading">
+    <!-- SECTION-8 -->
+    <section class="timeline">
+      <div class="timeline-heading">
         <span class="section-tag">Our Process</span>
-        <h2>Every Great Project<br>Has a Story.</h2>
-    </div>
+        <h2>Every Great Project<br />Has a Story.</h2>
+      </div>
 
-    <div class="timeline-wrapper">
-
+      <div class="timeline-wrapper">
         <!-- Step 1 -->
         <div class="timeline-item">
+          <div class="timeline-image">
+            <img src="images/AI_platform.webp" alt="" />
+          </div>
 
-            <div class="timeline-image">
-                <img src="images/AI_platform.webp" alt="">
-            </div>
-
-            <div class="timeline-content">
-                <span>01</span>
-                <h3>Discovery</h3>
-                <p>Understanding your vision, audience, and business goals before creating a strategy.</p>
-            </div>
-
+          <div class="timeline-content">
+            <span>01</span>
+            <h3>Discovery</h3>
+            <p>
+              Understanding your vision, audience, and business goals before
+              creating a strategy.
+            </p>
+          </div>
         </div>
 
         <!-- Step 2 -->
         <div class="timeline-item reverse">
+          <div class="timeline-image">
+            <img src="images/Technology.webp" alt="" />
+          </div>
 
-            <div class="timeline-image">
-                <img src="images/Technology.webp" alt="">
-            </div>
-
-            <div class="timeline-content">
-                <span>02</span>
-                <h3>Creative Design</h3>
-                <p>Designing beautiful user experiences with premium visuals and seamless interactions.</p>
-            </div>
-
+          <div class="timeline-content">
+            <span>02</span>
+            <h3>Creative Design</h3>
+            <p>
+              Designing beautiful user experiences with premium visuals and
+              seamless interactions.
+            </p>
+          </div>
         </div>
 
         <!-- Step 3 -->
         <div class="timeline-item">
+          <div class="timeline-image">
+            <img src="images/Web Design & Development.webp" alt="" />
+          </div>
 
-            <div class="timeline-image">
-                <img src="images/Web Design & Development.webp" alt="">
-            </div>
-
-            <div class="timeline-content">
-                <span>03</span>
-                <h3>Development</h3>
-                <p>Building fast, scalable and responsive digital experiences with clean code.</p>
-            </div>
-
+          <div class="timeline-content">
+            <span>03</span>
+            <h3>Development</h3>
+            <p>
+              Building fast, scalable and responsive digital experiences with
+              clean code.
+            </p>
+          </div>
         </div>
 
         <!-- Step 4 -->
         <div class="timeline-item reverse">
+          <div class="timeline-image">
+            <img src="images/Launch & Growth.webp" alt="" />
+          </div>
 
-            <div class="timeline-image">
-                <img src="images/Launch & Growth.webp" alt="">
-            </div>
-
-            <div class="timeline-content">
-                <span>04</span>
-                <h3>Launch & Growth</h3>
-                <p>Launching your product with confidence and continuously optimizing performance.</p>
-            </div>
-
+          <div class="timeline-content">
+            <span>04</span>
+            <h3>Launch & Growth</h3>
+            <p>
+              Launching your product with confidence and continuously optimizing
+              performance.
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- SECTION-9 -->
-<section class="difference">
-
-    <div class="difference-head">
-
+    <!-- SECTION-9 -->
+    <section class="difference">
+      <div class="difference-head">
         <span class="section-tag">The Difference</span>
 
-        <h2>
-            We don't just deliver projects.
-            We create lasting experiences.
-        </h2>
+        <h2>We don't just deliver projects. We create lasting experiences.</h2>
+      </div>
 
-    </div>
-
-    <div class="difference-grid">
-
+      <div class="difference-grid">
         <!-- Left -->
 
         <div class="difference-box left">
+          <h3>Traditional Agency</h3>
 
-            <h3>Traditional Agency</h3>
+          <ul>
+            <li>
+              <span>✕</span>
+              Generic Templates
+            </li>
 
-            <ul>
+            <li>
+              <span>✕</span>
+              Short-Term Thinking
+            </li>
 
-                <li>
-                    <span>✕</span>
-                    Generic Templates
-                </li>
+            <li>
+              <span>✕</span>
+              Slow Communication
+            </li>
 
-                <li>
-                    <span>✕</span>
-                    Short-Term Thinking
-                </li>
+            <li>
+              <span>✕</span>
+              Basic User Experience
+            </li>
 
-                <li>
-                    <span>✕</span>
-                    Slow Communication
-                </li>
+            <li>
+              <span>✕</span>
+              Limited Creativity
+            </li>
 
-                <li>
-                    <span>✕</span>
-                    Basic User Experience
-                </li>
-
-                <li>
-                    <span>✕</span>
-                    Limited Creativity
-                </li>
-
-                <li>
-                    <span>✕</span>
-                    Ordinary Visual Design
-                </li>
-
-            </ul>
-
+            <li>
+              <span>✕</span>
+              Ordinary Visual Design
+            </li>
+          </ul>
         </div>
 
         <!-- VS -->
 
         <div class="difference-middle">
-
-            <div class="circle">
-
-                VS
-
-            </div>
-
+          <div class="circle">VS</div>
         </div>
 
         <!-- Right -->
 
         <div class="difference-box right">
+          <h3>Stackly Studio</h3>
 
-            <h3>Stackly Studio</h3>
+          <ul>
+            <li>
+              <span>✓</span>
+              Original Design Systems
+            </li>
 
-            <ul>
+            <li>
+              <span>✓</span>
+              Long-Term Brand Strategy
+            </li>
 
-                <li>
-                    <span>✓</span>
-                    Original Design Systems
-                </li>
+            <li>
+              <span>✓</span>
+              Transparent Collaboration
+            </li>
 
-                <li>
-                    <span>✓</span>
-                    Long-Term Brand Strategy
-                </li>
+            <li>
+              <span>✓</span>
+              Premium User Experience
+            </li>
 
-                <li>
-                    <span>✓</span>
-                    Transparent Collaboration
-                </li>
+            <li>
+              <span>✓</span>
+              InStacklytive Creative Thinking
+            </li>
 
-                <li>
-                    <span>✓</span>
-                    Premium User Experience
-                </li>
-
-                <li>
-                    <span>✓</span>
-                    InStacklytive Creative Thinking
-                </li>
-
-                <li>
-                    <span>✓</span>
-                    Award-Worthy Craftsmanship
-                </li>
-
-            </ul>
-
+            <li>
+              <span>✓</span>
+              Award-Worthy Craftsmanship
+            </li>
+          </ul>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- SECTION-10 -->
-<section class="stack-section">
-
-    <div class="stack-heading">
+    <!-- SECTION-10 -->
+    <section class="stack-section">
+      <div class="stack-heading">
         <span class="section-tag">Featured Projects</span>
-        <h2>Ideas That<br>Shape Experiences</h2>
-    </div>
+        <h2>Ideas That<br />Shape Experiences</h2>
+      </div>
 
-    <div class="stack-wrapper">
-
+      <div class="stack-wrapper">
         <!-- Card 1 -->
         <article class="stack-card">
-            <img src="images/img-4-10-Luxury Residence.webp" alt="">
+          <img src="images/img-4-10-Luxury Residence.webp" alt="" />
 
-            <div class="stack-content">
-                <span>Brand Identity</span>
-                <h3>Luxury Residence</h3>
-                <p>
-                    Crafted a timeless visual identity for a premium
-                    architecture brand.
-                </p>
-                <a href="error.html">View Project →</a>
-            </div>
+          <div class="stack-content">
+            <span>Brand Identity</span>
+            <h3>Luxury Residence</h3>
+            <p>
+              Crafted a timeless visual identity for a premium architecture
+              brand.
+            </p>
+            <a href="error.html">View Project →</a>
+          </div>
         </article>
 
         <!-- Card 2 -->
         <article class="stack-card">
-            <img src="images/Minimal Living.webp" alt="">
+          <img src="images/Minimal Living.webp" alt="" />
 
-            <div class="stack-content">
-                <span>Creative Studio</span>
-                <h3>Modern Workspace</h3>
-                <p>
-                    A collaborative office experience with modern UI
-                    and immersive branding.
-                </p>
-                <a href="error.html">View Project →</a>
-            </div>
+          <div class="stack-content">
+            <span>Creative Studio</span>
+            <h3>Modern Workspace</h3>
+            <p>
+              A collaborative office experience with modern UI and immersive
+              branding.
+            </p>
+            <a href="error.html">View Project →</a>
+          </div>
         </article>
 
         <!-- Card 3 -->
         <article class="stack-card">
-            <img src="images/Minimal Living.webp" alt="">
+          <img src="images/Minimal Living.webp" alt="" />
 
-            <div class="stack-content">
-                <span>Interior Design</span>
-                <h3>Minimal Living</h3>
-                <p>
-                    Elegant interiors focused on simplicity,
-                    functionality and premium aesthetics.
-                </p>
-                <a href="error.html">View Project →</a>
-            </div>
+          <div class="stack-content">
+            <span>Interior Design</span>
+            <h3>Minimal Living</h3>
+            <p>
+              Elegant interiors focused on simplicity, functionality and premium
+              aesthetics.
+            </p>
+            <a href="error.html">View Project →</a>
+          </div>
         </article>
-
-    </div>
-
-</section>
-
-
-
-    <section class="cta-band">
-      <h2 class="cta-title ">Have a project in mind?</h2>
-      <p class="" >We take on a limited number of partners each quarter. Let's see if we're a fit.</p>
-      <a href="error.html" class="btn btn-primary " >Start a project <span class="arrow">→</span></a>
+      </div>
     </section>
 
-<!-- FOOTER -->
-<footer class="footer">
+    <section class="cta-band">
+      <h2 class="cta-title">Have a project in mind?</h2>
+      <p class="">
+        We take on a limited number of partners each quarter. Let's see if we're
+        a fit.
+      </p>
+      <a href="error.html" class="btn btn-primary"
+        >Start a project <span class="arrow">→</span></a
+      >
+    </section>
 
-    <!--==============================
+    <!-- FOOTER -->
+    <footer class="footer">
+      <!--==============================
             MARQUEE
     ===============================-->
 
-    <div class="footer-marquee">
-
+      <div class="footer-marquee">
         <div class="footer-marquee-track">
-
-            <span>LET'S CREATE</span>
-            <span>LET'S CREATE</span>
-            <span>LET'S CREATE</span>
-            <span>LET'S CREATE</span>
-            <span>LET'S CREATE</span>
-
+          <span>LET'S CREATE</span>
+          <span>LET'S CREATE</span>
+          <span>LET'S CREATE</span>
+          <span>LET'S CREATE</span>
+          <span>LET'S CREATE</span>
         </div>
+      </div>
 
-    </div>
-
-    <!--==============================
+      <!--==============================
             FOOTER GRID
     ===============================-->
 
-    <div class="footer-grid">
-
+      <div class="footer-grid">
         <!--==============================
                 BRAND
         ===============================-->
 
         <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="images/logo.webp" alt="Stackly Logo" />
+          </a>
 
-            <a href="index.html" class="footer-logo">
+          <p>
+            Stackly is an independent creative studio specializing in branding,
+            UI/UX design, web development, and digital experiences for ambitious
+            businesses worldwide.
+          </p>
 
-    <img
-        src="images/logo.webp"
-        alt="Stackly Logo">
+          <div class="footer-stats">
+            <div>
+              <h3>240+</h3>
 
-</a>
-
-            <p>
-
-                Stackly is an independent creative studio specializing
-                in branding, UI/UX design, web development, and digital
-                experiences for ambitious businesses worldwide.
-
-            </p>
-
-            <div class="footer-stats">
-
-                <div>
-
-                    <h3>240+</h3>
-
-                    <span>Projects</span>
-
-                </div>
-
-                <div>
-
-                    <h3>68</h3>
-
-                    <span>Awards</span>
-
-                </div>
-
-                <div>
-
-                    <h3>12</h3>
-
-                    <span>Countries</span>
-
-                </div>
-
+              <span>Projects</span>
             </div>
 
+            <div>
+              <h3>68</h3>
+
+              <span>Awards</span>
+            </div>
+
+            <div>
+              <h3>12</h3>
+
+              <span>Countries</span>
+            </div>
+          </div>
         </div>
 
         <!--==============================
@@ -778,25 +630,21 @@
         ===============================-->
 
         <div>
+          <h4>Services</h4>
 
-            <h4>Services</h4>
+          <ul>
+            <li><a href="error.html">Brand Strategy</a></li>
 
-            <ul>
+            <li><a href="error.html">UI / UX Design</a></li>
 
-                <li><a href="error.html">Brand Strategy</a></li>
+            <li><a href="error.html">Web Development</a></li>
 
-                <li><a href="error.html">UI / UX Design</a></li>
+            <li><a href="error.html">Motion Design</a></li>
 
-                <li><a href="error.html">Web Development</a></li>
+            <li><a href="error.html">Digital Marketing</a></li>
 
-                <li><a href="error.html">Motion Design</a></li>
-
-                <li><a href="error.html">Digital Marketing</a></li>
-
-                <li><a href="error.html">Consulting</a></li>
-
-            </ul>
-
+            <li><a href="error.html">Consulting</a></li>
+          </ul>
         </div>
 
         <!--==============================
@@ -804,23 +652,19 @@
         ===============================-->
 
         <div>
+          <h4>Resources</h4>
 
-            <h4>Resources</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
 
-            <ul>
+            <li><a href="about.html">About</a></li>
 
-                <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
 
-                <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
 
-                <li><a href="services.html">Services</a></li>
-
-                <li><a href="work.html">Work</a></li>
-
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
 
         <!--==============================
@@ -828,45 +672,21 @@
         ===============================-->
 
         <div>
+          <h4>Contact</h4>
 
-            <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="mailto:hello@stackly.studio"> hello@stackly.studio </a>
+            </li>
 
-            <ul>
+            <li>
+              <a href="tel:+14155550142"> +1 (415) 555-0142 </a>
+            </li>
 
-                <li>
+            <li>San Francisco, California</li>
 
-                    <a href="mailto:hello@stackly.studio">
-
-                        hello@stackly.studio
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="tel:+14155550142">
-
-                        +1 (415) 555-0142
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    San Francisco, California
-
-                </li>
-
-                <li>
-
-                    Mon – Fri · 9AM – 6PM
-
-                </li>
-
-            </ul>
-
+            <li>Mon – Fri · 9AM – 6PM</li>
+          </ul>
         </div>
 
         <!--==============================
@@ -874,113 +694,69 @@
         ===============================-->
 
         <div class="newsletter">
+          <h4>Newsletter</h4>
 
-            <h4>Newsletter</h4>
+          <p>
+            Join thousands of founders, designers and developers receiving
+            monthly insights from Stackly.
+          </p>
 
-            <p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
 
-                Join thousands of founders, designers and developers
-                receiving monthly insights from Stackly.
+            <button type="submit">Subscribe</button>
+          </form>
 
-            </p>
-
-            <form class="newsletter-form">
-
-                <input
-
-                    type="email"
-
-                    placeholder="Enter your email"
-
-                    required>
-
-                <button type="submit">
-
-                    Subscribe
-
-                </button>
-
-            </form>
-
-            <small>
-
-                No spam. Unsubscribe anytime.
-
-            </small>
-
+          <small> No spam. Unsubscribe anytime. </small>
         </div>
+      </div>
 
-    </div>
-
-    <!--==============================
+      <!--==============================
             FOOTER BOTTOM
     ===============================-->
 
-    <div class="footer-bottom">
-
-        <span>
-
-            © 2026 Stackly Studio. All rights reserved.
-
-        </span>
+      <div class="footer-bottom">
+        <span> © 2026 Stackly Studio. All rights reserved. </span>
 
         <!-- Social Icons -->
 
         <div class="footer-social">
+          <a href="error.html" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
 
-            <a href="error.html" aria-label="Instagram">
+          <a href="error.html" aria-label="Behance">
+            <i class="fa-brands fa-behance"></i>
+          </a>
 
-                <i class="fa-brands fa-instagram"></i>
+          <a href="error.html" aria-label="Dribbble">
+            <i class="fa-brands fa-dribbble"></i>
+          </a>
 
-            </a>
+          <a href="error.html" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
 
-            <a href="error.html" aria-label="Behance">
+          <a href="error.html" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
 
-                <i class="fa-brands fa-behance"></i>
-
-            </a>
-
-            <a href="error.html" aria-label="Dribbble">
-
-                <i class="fa-brands fa-dribbble"></i>
-
-            </a>
-
-            <a href="error.html" aria-label="LinkedIn">
-
-                <i class="fa-brands fa-linkedin-in"></i>
-
-            </a>
-
-            <a href="error.html" aria-label="GitHub">
-
-                <i class="fa-brands fa-github"></i>
-
-            </a>
-
-            <a href="error.html" aria-label="Twitter">
-
-                <i class="fa-brands fa-x-twitter"></i>
-
-            </a>
-
+          <a href="error.html" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
         </div>
 
         <div class="footer-links">
+          <a href="error.html">Privacy</a>
 
-            <a href="error.html">Privacy</a>
+          <a href="error.html">Terms</a>
 
-            <a href="error.html">Terms</a>
+          <a href="error.html">Cookies</a>
 
-            <a href="error.html">Cookies</a>
-
-            <a href="error.html">Sitemap</a>
-
+          <a href="error.html">Sitemap</a>
         </div>
-
-    </div>
-
-</footer>
+      </div>
+    </footer>
 
     <script type="module" src="js/comman.js"></script>
     <script src="js/home.js"></script>

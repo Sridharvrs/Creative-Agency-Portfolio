@@ -15,16 +15,12 @@
       <!-- SIDEBAR -->
       <aside class="sidebar">
         <div class="brand">
-            <div class="logo">
-                <a href="index.html" class="nav-logo">
-                    <img
-                        src="images/stackly_logo.webp"
-                        alt="Stackly Logo">
-                </a>
-                <span>client Portal</span>
-
-            </div>
-          
+          <div class="logo">
+            <a href="index.html" class="nav-logo">
+              <img src="images/stackly_logo.webp" alt="Stackly Logo" />
+            </a>
+            <span>client Portal</span>
+          </div>
         </div>
 
         <nav class="nav">
@@ -123,13 +119,10 @@
         </div>
 
         <button id="logoutBtn" class="logout-btn">
+          <i class="fa-solid fa-right-from-bracket"></i>
 
-            <i class="fa-solid fa-right-from-bracket"></i>
-
-            <span>Logout</span>
-
+          <span>Logout</span>
         </button>
-
       </aside>
 
       <!-- MAIN -->
@@ -152,7 +145,11 @@
               </svg>
               <input placeholder="Search projects, invoices, files..." />
             </div>
-            <button class="icon-btn" title="Notifications">
+            <button
+              class="icon-btn"
+              title="Notifications"
+              onclick="window.location.href = 'dashboarderror.html'"
+            >
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -164,7 +161,12 @@
               </svg>
               <span class="dot"></span>
             </button>
-            <button class="btn primary">+ New Brief</button>
+            <button
+              class="btn primary"
+              onclick="window.location.href = 'dashboarderror.html'"
+            >
+              + New Brief
+            </button>
           </div>
         </header>
 
@@ -284,7 +286,7 @@
           <div class="panel">
             <div class="panel-head">
               <h4>Recent Activity</h4>
-              <a href="#" class="link">View all</a>
+              <a href="dashboarderror.html" class="link">View all</a>
             </div>
             <table class="table">
               <thead>
@@ -406,11 +408,26 @@
               </div>
 
               <div class="project-buttons">
-                <button class="btn primary">View Project</button>
+                <button
+                  class="btn primary"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  View Project
+                </button>
 
-                <button class="btn ghost">Open Files</button>
+                <button
+                  class="btn ghost"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  Open Files
+                </button>
 
-                <button class="btn ghost">Timeline</button>
+                <button
+                  class="btn ghost"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  Timeline
+                </button>
               </div>
             </div>
 
@@ -420,7 +437,6 @@
                 alt="Project"
               />
             </div>
-
           </section>
 
           <div class="project-overview">
@@ -460,7 +476,6 @@
 
             <span> 6 Days Remaining </span>
           </div>
-
         </section>
 
         <!-- MESSAGES TAB -->
@@ -509,168 +524,119 @@
               </div>
               <div class="composer">
                 <input placeholder="Write a message..." />
-                <button class="btn primary">Send</button>
+                <button
+                  class="btn primary"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  Send
+                </button>
               </div>
             </div>
           </div>
 
           <!--  -->
-<section class="ai-assistant">
+          <section class="ai-assistant">
+            <div class="ai-header">
+              <div class="ai-title">
+                <div class="ai-icon">
+                  <i class="fa-solid fa-sparkles"></i>
+                </div>
 
-    <div class="ai-header">
+                <div>
+                  <h2>Stackly AI Assistant</h2>
 
-        <div class="ai-title">
+                  <p>Your intelligent project companion</p>
+                </div>
+              </div>
 
-            <div class="ai-icon">
-
-                <i class="fa-solid fa-sparkles"></i>
-
+              <span class="ai-status"> ● Online </span>
             </div>
 
-            <div>
+            <div class="ai-grid">
+              <div class="ai-card">
+                <i class="fa-solid fa-file-lines"></i>
 
-                <h2>Stackly AI Assistant</h2>
+                <h3>Summarize Project</h3>
 
-                <p>Your intelligent project companion</p>
+                <p>
+                  Generate a concise summary of the latest project activities.
+                </p>
 
+                <button onclick="window.location.href = 'dashboarderror.html'">
+                  Generate Summary
+                </button>
+              </div>
+
+              <div class="ai-card">
+                <i class="fa-solid fa-reply"></i>
+
+                <h3>Smart Reply</h3>
+
+                <p>
+                  Instantly create professional replies for client messages.
+                </p>
+
+                <button onclick="window.location.href = 'dashboarderror.html'">
+                  Generate Reply
+                </button>
+              </div>
+
+              <div class="ai-card">
+                <i class="fa-solid fa-list-check"></i>
+
+                <h3>Create Tasks</h3>
+
+                <p>
+                  Convert discussions into actionable project tasks
+                  automatically.
+                </p>
+
+                <button onclick="window.location.href = 'dashboarderror.html'">
+                  Create Tasks
+                </button>
+              </div>
+
+              <div class="ai-card">
+                <i class="fa-solid fa-language"></i>
+
+                <h3>Translate Message</h3>
+
+                <p>
+                  Translate conversations into multiple languages instantly.
+                </p>
+
+                <button onclick="window.location.href = 'dashboarderror.html'">
+                  Translate
+                </button>
+              </div>
+
+              <div class="ai-card">
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>Project Insights</h3>
+
+                <p>Analyze project progress and identify potential risks.</p>
+
+                <button onclick="window.location.href = 'dashboarderror.html'">
+                  Analyze
+                </button>
+              </div>
+
+              <div class="ai-card">
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <h3>Improve Content</h3>
+
+                <p>
+                  Rewrite reports, proposals and documentation professionally.
+                </p>
+
+                <button onclick="window.location.href = 'dashboarderror.html'">
+                  Optimize
+                </button>
+              </div>
             </div>
-
-        </div>
-
-        <span class="ai-status">
-
-            ● Online
-
-        </span>
-
-    </div>
-
-    <div class="ai-grid">
-
-        <div class="ai-card">
-
-            <i class="fa-solid fa-file-lines"></i>
-
-            <h3>Summarize Project</h3>
-
-            <p>
-
-                Generate a concise summary of the latest project activities.
-
-            </p>
-
-            <button>
-
-                Generate Summary
-
-            </button>
-
-        </div>
-
-        <div class="ai-card">
-
-            <i class="fa-solid fa-reply"></i>
-
-            <h3>Smart Reply</h3>
-
-            <p>
-
-                Instantly create professional replies for client messages.
-
-            </p>
-
-            <button>
-
-                Generate Reply
-
-            </button>
-
-        </div>
-
-        <div class="ai-card">
-
-            <i class="fa-solid fa-list-check"></i>
-
-            <h3>Create Tasks</h3>
-
-            <p>
-
-                Convert discussions into actionable project tasks automatically.
-
-            </p>
-
-            <button>
-
-                Create Tasks
-
-            </button>
-
-        </div>
-
-        <div class="ai-card">
-
-            <i class="fa-solid fa-language"></i>
-
-            <h3>Translate Message</h3>
-
-            <p>
-
-                Translate conversations into multiple languages instantly.
-
-            </p>
-
-            <button>
-
-                Translate
-
-            </button>
-
-        </div>
-
-        <div class="ai-card">
-
-            <i class="fa-solid fa-chart-line"></i>
-
-            <h3>Project Insights</h3>
-
-            <p>
-
-                Analyze project progress and identify potential risks.
-
-            </p>
-
-            <button>
-
-                Analyze
-
-            </button>
-
-        </div>
-
-        <div class="ai-card">
-
-            <i class="fa-solid fa-lightbulb"></i>
-
-            <h3>Improve Content</h3>
-
-            <p>
-
-                Rewrite reports, proposals and documentation professionally.
-
-            </p>
-
-            <button>
-
-                Optimize
-
-            </button>
-
-        </div>
-
-    </div>
-
-</section>
-
+          </section>
         </section>
 
         <!-- INVOICES TAB -->
@@ -696,7 +662,12 @@
           <div class="panel">
             <div class="panel-head">
               <h4>All Invoices</h4>
-              <button class="btn ghost">Download all</button>
+              <button
+                class="btn ghost"
+                onclick="window.location.href = 'dashboarderror.html'"
+              >
+                Download all
+              </button>
             </div>
             <table class="table">
               <thead>
@@ -716,7 +687,7 @@
                   <td>$4,800</td>
                   <td><span class="pill yellow">Due</span></td>
                   <td>Jul 22, 2026</td>
-                  <td><a href="#" class="link">View</a></td>
+                  <td><a href="dashboarderror.html" class="link">View</a></td>
                 </tr>
                 <tr>
                   <td>INV-0418</td>
@@ -724,7 +695,7 @@
                   <td>$3,600</td>
                   <td><span class="pill yellow">Due</span></td>
                   <td>Jul 22, 2026</td>
-                  <td><a href="#" class="link">View</a></td>
+                  <td><a href="dashboarderror.html" class="link">View</a></td>
                 </tr>
                 <tr>
                   <td>INV-0405</td>
@@ -732,7 +703,7 @@
                   <td>$6,200</td>
                   <td><span class="pill green">Paid</span></td>
                   <td>Jun 30, 2026</td>
-                  <td><a href="#" class="link">View</a></td>
+                  <td><a href="dashboarderror.html" class="link">View</a></td>
                 </tr>
                 <tr>
                   <td>INV-0392</td>
@@ -740,7 +711,7 @@
                   <td>$3,600</td>
                   <td><span class="pill green">Paid</span></td>
                   <td>Jun 01, 2026</td>
-                  <td><a href="#" class="link">View</a></td>
+                  <td><a href="dashboarderror.html" class="link">View</a></td>
                 </tr>
               </tbody>
             </table>
@@ -748,250 +719,184 @@
 
           <!--  -->
 
-<section class="invoice-hero">
+          <section class="invoice-hero">
+            <div class="invoice-left">
+              <span class="invoice-tag">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+                Invoice Center
+              </span>
 
-    <div class="invoice-left">
+              <h2>Manage invoices, payments & revenue in one place.</h2>
 
-        <span class="invoice-tag">
-            <i class="fa-solid fa-file-invoice-dollar"></i>
-            Invoice Center
-        </span>
+              <p>
+                Track paid invoices, pending payments, upcoming due dates, and
+                overall business revenue with a centralized financial dashboard.
+              </p>
 
-        <h2>
-            Manage invoices,
-            payments & revenue
-            in one place.
-        </h2>
+              <div class="invoice-actions">
+                <button
+                  class="btn-primary"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  <i class="fa-solid fa-plus"></i>
 
-        <p>
+                  Create Invoice
+                </button>
 
-            Track paid invoices, pending payments, upcoming due dates,
-            and overall business revenue with a centralized financial dashboard.
+                <button
+                  class="btn-outline"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  <i class="fa-solid fa-download"></i>
 
-        </p>
-
-        <div class="invoice-actions">
-
-            <button class="btn-primary">
-
-                <i class="fa-solid fa-plus"></i>
-
-                Create Invoice
-
-            </button>
-
-            <button class="btn-outline">
-
-                <i class="fa-solid fa-download"></i>
-
-                Export Report
-
-            </button>
-
-        </div>
-
-    </div>
-
-    <div class="invoice-right">
-
-        <div class="invoice-card total">
-
-            <small>Total Revenue</small>
-
-            <h3>$84,560</h3>
-
-            <span>
-                <i class="fa-solid fa-arrow-trend-up"></i>
-                +12.8% this month
-            </span>
-
-        </div>
-
-        <div class="invoice-mini-grid">
-
-            <div class="mini-card">
-
-                <i class="fa-solid fa-circle-check"></i>
-
-                <h4>$58,300</h4>
-
-                <p>Paid</p>
-
+                  Export Report
+                </button>
+              </div>
             </div>
 
-            <div class="mini-card">
+            <div class="invoice-right">
+              <div class="invoice-card total">
+                <small>Total Revenue</small>
 
-                <i class="fa-solid fa-clock"></i>
+                <h3>$84,560</h3>
 
-                <h4>$18,900</h4>
+                <span>
+                  <i class="fa-solid fa-arrow-trend-up"></i>
+                  +12.8% this month
+                </span>
+              </div>
 
-                <p>Pending</p>
+              <div class="invoice-mini-grid">
+                <div class="mini-card">
+                  <i class="fa-solid fa-circle-check"></i>
 
+                  <h4>$58,300</h4>
+
+                  <p>Paid</p>
+                </div>
+
+                <div class="mini-card">
+                  <i class="fa-solid fa-clock"></i>
+
+                  <h4>$18,900</h4>
+
+                  <p>Pending</p>
+                </div>
+
+                <div class="mini-card">
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+
+                  <h4>$7,360</h4>
+
+                  <p>Overdue</p>
+                </div>
+
+                <div class="mini-card">
+                  <i class="fa-solid fa-calendar-days"></i>
+
+                  <h4>18</h4>
+
+                  <p>Invoices</p>
+                </div>
+              </div>
             </div>
-
-            <div class="mini-card">
-
-                <i class="fa-solid fa-triangle-exclamation"></i>
-
-                <h4>$7,360</h4>
-
-                <p>Overdue</p>
-
-            </div>
-
-            <div class="mini-card">
-
-                <i class="fa-solid fa-calendar-days"></i>
-
-                <h4>18</h4>
-
-                <p>Invoices</p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
+          </section>
         </section>
 
         <!-- FILES TAB -->
         <section class="tab" id="tab-files">
+          <section class="files-hero">
+            <div class="files-left">
+              <span class="files-tag">
+                <i class="fa-solid fa-folder-open"></i>
 
-<section class="files-hero">
+                Files & Assets
+              </span>
 
-    <div class="files-left">
+              <h2>Organize, manage and share all your project assets.</h2>
 
-        <span class="files-tag">
+              <p>
+                Securely store design files, project documents, source code,
+                images and presentations in one centralized workspace with
+                real-time synchronization.
+              </p>
 
-            <i class="fa-solid fa-folder-open"></i>
+              <div class="storage-progress">
+                <div class="storage-top">
+                  <span>Storage Used</span>
 
-            Files & Assets
+                  <strong>184 GB / 250 GB</strong>
+                </div>
 
-        </span>
+                <div class="storage-bar">
+                  <div class="storage-fill"></div>
+                </div>
+              </div>
 
-        <h2>
+              <div class="hero-actions">
+                <button class="btn-upload">
+                  <i class="fa-solid fa-cloud-arrow-up"></i>
 
-            Organize, manage and
-            share all your project assets.
+                  Upload Files
+                </button>
 
-        </h2>
+                <button
+                  class="btn-folder"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  <i class="fa-solid fa-folder-plus"></i>
 
-        <p>
-
-            Securely store design files, project documents, source code,
-            images and presentations in one centralized workspace with
-            real-time synchronization.
-
-        </p>
-
-        <div class="storage-progress">
-
-            <div class="storage-top">
-
-                <span>Storage Used</span>
-
-                <strong>184 GB / 250 GB</strong>
-
+                  New Folder
+                </button>
+              </div>
             </div>
 
-            <div class="storage-bar">
+            <div class="files-right">
+              <div class="storage-card">
+                <small>Total Files</small>
 
-                <div class="storage-fill"></div>
+                <h3>184</h3>
 
+                <span> +16 this week </span>
+              </div>
+
+              <div class="mini-storage-grid">
+                <div class="mini-storage">
+                  <i class="fa-solid fa-images"></i>
+
+                  <h4>56 GB</h4>
+
+                  <p>Images</p>
+                </div>
+
+                <div class="mini-storage">
+                  <i class="fa-solid fa-file-lines"></i>
+
+                  <h4>42 GB</h4>
+
+                  <p>Documents</p>
+                </div>
+
+                <div class="mini-storage">
+                  <i class="fa-solid fa-code"></i>
+
+                  <h4>31 GB</h4>
+
+                  <p>Source Code</p>
+                </div>
+
+                <div class="mini-storage">
+                  <i class="fa-solid fa-video"></i>
+
+                  <h4>55 GB</h4>
+
+                  <p>Videos</p>
+                </div>
+              </div>
             </div>
+          </section>
 
-        </div>
-
-        <div class="hero-actions">
-
-            <button class="btn-upload">
-
-                <i class="fa-solid fa-cloud-arrow-up"></i>
-
-                Upload Files
-
-            </button>
-
-            <button class="btn-folder">
-
-                <i class="fa-solid fa-folder-plus"></i>
-
-                New Folder
-
-            </button>
-
-        </div>
-
-    </div>
-
-    <div class="files-right">
-
-        <div class="storage-card">
-
-            <small>Total Files</small>
-
-            <h3>184</h3>
-
-            <span>
-
-                +16 this week
-
-            </span>
-
-        </div>
-
-        <div class="mini-storage-grid">
-
-            <div class="mini-storage">
-
-                <i class="fa-solid fa-images"></i>
-
-                <h4>56 GB</h4>
-
-                <p>Images</p>
-
-            </div>
-
-            <div class="mini-storage">
-
-                <i class="fa-solid fa-file-lines"></i>
-
-                <h4>42 GB</h4>
-
-                <p>Documents</p>
-
-            </div>
-
-            <div class="mini-storage">
-
-                <i class="fa-solid fa-code"></i>
-
-                <h4>31 GB</h4>
-
-                <p>Source Code</p>
-
-            </div>
-
-            <div class="mini-storage">
-
-                <i class="fa-solid fa-video"></i>
-
-                <h4>55 GB</h4>
-
-                <p>Videos</p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--  -->
+          <!--  -->
           <div class="files-grid">
             <div class="file">
               <div class="thumb thumb-1"></div>
@@ -1019,183 +924,96 @@
             </div>
           </div>
 
-<!--  -->
-<section class="ai-assets">
+          <!--  -->
+          <section class="ai-assets">
+            <div class="ai-assets-header">
+              <div class="ai-heading">
+                <div class="ai-logo">
+                  <i class="fa-solid fa-sparkles"></i>
+                </div>
 
-    <div class="ai-assets-header">
+                <div>
+                  <span class="section-label"> AI Powered </span>
 
-        <div class="ai-heading">
+                  <h2>AI Asset Assistant</h2>
 
-            <div class="ai-logo">
+                  <p>
+                    Organize, search and manage your project assets
+                    intelligently.
+                  </p>
+                </div>
+              </div>
 
-                <i class="fa-solid fa-sparkles"></i>
+              <div class="ai-online">
+                <span></span>
 
+                AI Ready
+              </div>
             </div>
 
-            <div>
+            <div class="ai-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
 
-                <span class="section-label">
+              <input
+                type="text"
+                placeholder="Ask AI anything about your files..."
+              />
 
-                    AI Powered
-
-                </span>
-
-                <h2>
-
-                    AI Asset Assistant
-
-                </h2>
-
-                <p>
-
-                    Organize, search and manage your project assets intelligently.
-
-                </p>
-
+              <button onclick="window.location.href = 'dashboarderror.html'">
+                Ask AI
+              </button>
             </div>
 
-        </div>
+            <div class="ai-grid">
+              <div class="ai-box">
+                <i class="fa-solid fa-layer-group"></i>
 
-        <div class="ai-online">
+                <h3>Organize Assets</h3>
 
-            <span></span>
+                <p>Automatically arrange files into smart folders.</p>
+              </div>
 
-            AI Ready
+              <div class="ai-box">
+                <i class="fa-solid fa-copy"></i>
 
-        </div>
+                <h3>Find Duplicates</h3>
 
-    </div>
+                <p>Detect duplicate images, PDFs and documents.</p>
+              </div>
 
-    <div class="ai-search">
+              <div class="ai-box">
+                <i class="fa-solid fa-tags"></i>
 
-        <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>Generate Tags</h3>
 
-        <input
-            type="text"
-            placeholder="Ask AI anything about your files...">
+                <p>AI automatically tags every uploaded asset.</p>
+              </div>
 
-        <button>
+              <div class="ai-box">
+                <i class="fa-solid fa-file-lines"></i>
 
-            Ask AI
+                <h3>Summarize Document</h3>
 
-        </button>
+                <p>Create quick summaries from large documents.</p>
+              </div>
 
-    </div>
+              <div class="ai-box">
+                <i class="fa-solid fa-pen-ruler"></i>
 
-    <div class="ai-grid">
+                <h3>Rename Files</h3>
 
-        <div class="ai-box">
+                <p>Rename hundreds of files consistently.</p>
+              </div>
 
-            <i class="fa-solid fa-layer-group"></i>
+              <div class="ai-box">
+                <i class="fa-solid fa-share-nodes"></i>
 
-            <h3>
+                <h3>Smart Sharing</h3>
 
-                Organize Assets
-
-            </h3>
-
-            <p>
-
-                Automatically arrange files into smart folders.
-
-            </p>
-
-        </div>
-
-        <div class="ai-box">
-
-            <i class="fa-solid fa-copy"></i>
-
-            <h3>
-
-                Find Duplicates
-
-            </h3>
-
-            <p>
-
-                Detect duplicate images, PDFs and documents.
-
-            </p>
-
-        </div>
-
-        <div class="ai-box">
-
-            <i class="fa-solid fa-tags"></i>
-
-            <h3>
-
-                Generate Tags
-
-            </h3>
-
-            <p>
-
-                AI automatically tags every uploaded asset.
-
-            </p>
-
-        </div>
-
-        <div class="ai-box">
-
-            <i class="fa-solid fa-file-lines"></i>
-
-            <h3>
-
-                Summarize Document
-
-            </h3>
-
-            <p>
-
-                Create quick summaries from large documents.
-
-            </p>
-
-        </div>
-
-        <div class="ai-box">
-
-            <i class="fa-solid fa-pen-ruler"></i>
-
-            <h3>
-
-                Rename Files
-
-            </h3>
-
-            <p>
-
-                Rename hundreds of files consistently.
-
-            </p>
-
-        </div>
-
-        <div class="ai-box">
-
-            <i class="fa-solid fa-share-nodes"></i>
-
-            <h3>
-
-                Smart Sharing
-
-            </h3>
-
-            <p>
-
-                Suggest the best teammates to share files with.
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
+                <p>Suggest the best teammates to share files with.</p>
+              </div>
+            </div>
+          </section>
         </section>
 
         <!-- SETTINGS TAB -->
@@ -1213,7 +1031,12 @@ Product designer focused on brand systems and editorial UI.</textarea
                 >
               </label>
             </div>
-            <button class="btn primary">Save changes</button>
+            <button
+              class="btn primary"
+              onclick="window.location.href = 'dashboarderror.html'"
+            >
+              Save changes
+            </button>
           </div>
           <div class="panel">
             <div class="panel-head"><h4>Preferences</h4></div>

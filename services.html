@@ -7,7 +7,10 @@
     <title>Services — Stackly Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,28 +20,17 @@
   </head>
   <body>
     <nav class="nav" id="nav">
+      <a href="index.html" class="nav-logo">
+        <img src="images/stackly_logo.webp" alt="Stackly Logo" />
+      </a>
 
-    <a href="index.html" class="nav-logo">
-
-    <img
-        src="images/stackly_logo.webp"
-        alt="Stackly Logo">
-
-</a>
-
-    <ul class="nav-links" id="navLinks">
+      <ul class="nav-links" id="navLinks">
         <!-- Mobile Header -->
 
         <li class="mobile-header">
-
-            <a href="index.html" class="mobile-logo">
-
-                <img
-                    src="images/logo.webp"
-                    alt="Stackly Logo">
-
-            </a>
-
+          <a href="index.html" class="mobile-logo">
+            <img src="images/logo.webp" alt="Stackly Logo" />
+          </a>
         </li>
 
         <li><a href="index.html">Home</a></li>
@@ -54,357 +46,342 @@
         <!-- Mobile Only -->
 
         <li class="mobile-only">
-
-            <a href="login.html" class="mobile-btn">
-
-                Start a Project
-
-            </a>
-
+          <a href="login.html" class="mobile-btn"> Start a Project </a>
         </li>
 
         <li class="mobile-contact">
+          <h4>Contact</h4>
 
-            <h4>Contact</h4>
+          <p>hello@stackly.studio</p>
 
-            <p>hello@stackly.studio</p>
+          <p>+1 (415) 555-0142</p>
 
-            <p>+1 (415) 555-0142</p>
-
-            <p>San Francisco, USA</p>
-
+          <p>San Francisco, USA</p>
         </li>
+      </ul>
 
-    </ul>
+      <!-- Desktop Only -->
 
-    <!-- Desktop Only -->
+      <a href="login.html" class="nav-cta"> Start a Project </a>
 
-    <a href="login.html" class="nav-cta">
-
-        Start a Project
-
-    </a>
-
-    <button class="nav-toggle" id="navToggle">
-
+      <button class="nav-toggle" id="navToggle">
         <span></span>
         <span></span>
         <span></span>
+      </button>
+    </nav>
 
-    </button>
+<header class="services-hero">
 
-</nav>
+    <div class="sh-inner">
 
-    <header class="services-hero">
-      <div class="sh-inner">
-        <span class="eyebrow section-tag ">What we do</span>
-        <h1 class="sh-title " >
-          Six disciplines.<br />One standard.
+        <span class="eyebrow section-tag">
+
+            What we do
+
+        </span>
+
+        <h1 class="sh-title">
+
+            Six disciplines.<br>
+
+            One standard.
+
         </h1>
-        <p class="sh-sub " >
-          We're a full-spectrum studio. Whether you need a single sprint or a
-          year-long partnership, every engagement runs through the same
-          craft-obsessed team.
-        </p>
-      </div>
-      <div class="sh-grid-bg"></div>
-    </header>
 
-<!-- SECTION-2 -->
-<!--=========================================
+        <p class="sh-sub">
+
+            We're a full-spectrum studio. Whether you need a single sprint
+            or a long-term partnership, every engagement is driven by
+            creativity, strategy and measurable results.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="contact.html" class="hero-btn">
+
+                Start Project
+
+            </a>
+
+            <a href="work.html" class="hero-btn outline">
+
+                View Work
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!--======================
+            RIGHT
+    =======================-->
+
+    <div class="services-showcase">
+
+    <div class="service-card featured">
+
+        <i class="fa-solid fa-code"></i>
+
+        <h3>Web Development</h3>
+
+        <span>React • Node • MongoDB</span>
+
+    </div>
+
+    <div class="service-card">
+
+        <i class="fa-solid fa-pen-ruler"></i>
+
+        <h3>UI / UX Design</h3>
+
+        <span>Modern Interfaces</span>
+
+    </div>
+
+    <div class="service-card">
+
+        <i class="fa-solid fa-palette"></i>
+
+        <h3>Brand Identity</h3>
+
+        <span>Creative Systems</span>
+
+    </div>
+
+    <div class="service-card">
+
+        <i class="fa-solid fa-mobile-screen-button"></i>
+
+        <h3>Mobile Apps</h3>
+
+        <span>Android & iOS</span>
+
+    </div>
+
+    <div class="service-card">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <h3>Marketing</h3>
+
+        <span>SEO & Growth</span>
+
+    </div>
+
+</div>
+
+    <div class="sh-grid-bg"></div>
+
+</header>
+
+    <!-- SECTION-2 -->
+    <!--=========================================
         FEATURED SERVICES
 ==========================================-->
 
-<section class="featured-services">
+    <section class="featured-services">
+      <div class="section-heading">
+        <span class="section-tag"> Featured Services </span>
 
-    <div class="section-heading">
-
-        <span class="section-tag">
-            Featured Services
-        </span>
-
-        <h2>
-            Crafted to move
-            brands forward.
-        </h2>
+        <h2>Crafted to move brands forward.</h2>
 
         <p>
-            Every service is built around strategy, creativity,
-            and measurable business impact.
+          Every service is built around strategy, creativity, and measurable
+          business impact.
         </p>
+      </div>
 
-    </div>
+      <!-- 1 -->
 
-    <!-- 1 -->
-
-    <article class="service-row">
-
+      <article class="service-row">
         <div class="service-image">
-
-            <img src="images/Pixel Studio.webp">
-
+          <img src="images/Pixel Studio.webp" />
         </div>
 
         <div class="service-content">
+          <span>01</span>
 
-            <span>01</span>
+          <h3>Brand Strategy & Identity</h3>
 
-            <h3>Brand Strategy & Identity</h3>
+          <p>
+            We create distinctive brand identities that build trust, improve
+            recognition, and connect emotionally with customers.
+          </p>
 
-            <p>
-                We create distinctive brand identities that build trust,
-                improve recognition, and connect emotionally with customers.
-            </p>
+          <ul>
+            <li>Brand Research</li>
+            <li>Visual Identity</li>
+            <li>Brand Guidelines</li>
+          </ul>
 
-            <ul>
-
-                <li>Brand Research</li>
-                <li>Visual Identity</li>
-                <li>Brand Guidelines</li>
-
-            </ul>
-
-            <a href="error.html" class="project-btn">
-                Explore Service →
-            </a>
-
+          <a href="error.html" class="project-btn"> Explore Service → </a>
         </div>
+      </article>
 
-    </article>
+      <!-- 2 -->
 
-    <!-- 2 -->
-
-    <article class="service-row reverse">
-
+      <article class="service-row reverse">
         <div class="service-image">
-
-            <img src="images/AI_platform.webp">
-
+          <img src="images/AI_platform.webp" />
         </div>
 
         <div class="service-content">
+          <span>02</span>
 
-            <span>02</span>
+          <h3>Digital Product Design</h3>
 
-            <h3>Digital Product Design</h3>
+          <p>
+            Creating intuitive digital products through user-centered research,
+            wireframes, prototypes, and polished interfaces.
+          </p>
 
-            <p>
-                Creating intuitive digital products through user-centered
-                research, wireframes, prototypes, and polished interfaces.
-            </p>
+          <ul>
+            <li>User Research</li>
+            <li>UI / UX Design</li>
+            <li>Design Systems</li>
+          </ul>
 
-            <ul>
-
-                <li>User Research</li>
-                <li>UI / UX Design</li>
-                <li>Design Systems</li>
-
-            </ul>
-
-            <a href="error.html" class="project-btn">
-                Explore Service →
-            </a>
-
+          <a href="error.html" class="project-btn"> Explore Service → </a>
         </div>
+      </article>
 
-    </article>
+      <!-- 3 -->
 
-    <!-- 3 -->
-
-    <article class="service-row">
-
+      <article class="service-row">
         <div class="service-image">
-
-            <img src="images/Web Design & Development.webp">
-
+          <img src="images/Web Design & Development.webp" />
         </div>
 
         <div class="service-content">
+          <span>03</span>
 
-            <span>03</span>
+          <h3>Web Design & Development</h3>
 
-            <h3>Web Design & Development</h3>
+          <p>
+            High-performance websites engineered with modern technologies,
+            exceptional UI, and seamless user experiences.
+          </p>
 
-            <p>
-                High-performance websites engineered with modern technologies,
-                exceptional UI, and seamless user experiences.
-            </p>
+          <ul>
+            <li>Responsive Websites</li>
+            <li>Front-end Development</li>
+            <li>SEO Optimization</li>
+          </ul>
 
-            <ul>
-
-                <li>Responsive Websites</li>
-                <li>Front-end Development</li>
-                <li>SEO Optimization</li>
-
-            </ul>
-
-            <a href="error.html">
-                Explore Service →
-            </a>
-
+          <a href="error.html"> Explore Service → </a>
         </div>
+      </article>
+    </section>
 
-    </article>
-
-</section>
-
-<!-- SECTION-3 -->
-<!--=========================================
+    <!-- SECTION-3 -->
+    <!--=========================================
         INDUSTRIES WE SERVE
 ==========================================-->
 
-<section class="industries">
+    <section class="industries">
+      <div class="industries-head">
+        <span class="section-tag"> Industries We Serve </span>
 
-    <div class="industries-head">
+        <h2>Helping businesses across every industry.</h2>
+      </div>
 
-        <span class="section-tag">
-            Industries We Serve
-        </span>
-
-        <h2>
-            Helping businesses
-            across every industry.
-        </h2>
-
-    </div>
-
-    <div class="industries-grid">
-
+      <div class="industries-grid">
         <!-- Card -->
 
         <article class="industry-card">
+          <img src="images/RealEstate.webp" />
 
-            <img src="images/RealEstate.webp">
+          <div class="industry-overlay">
+            <span>01</span>
 
-            <div class="industry-overlay">
+            <h3>Real Estate</h3>
 
-                <span>01</span>
-
-                <h3>Real Estate</h3>
-
-                <p>
-                    Luxury property websites,
-                    branding and digital marketing.
-                </p>
-
-            </div>
-
+            <p>Luxury property websites, branding and digital marketing.</p>
+          </div>
         </article>
 
         <!-- Card -->
 
         <article class="industry-card">
+          <img src="images/HealthCare.webp" />
 
-            <img src="images/HealthCare.webp">
+          <div class="industry-overlay">
+            <span>02</span>
 
-            <div class="industry-overlay">
+            <h3>Healthcare</h3>
 
-                <span>02</span>
-
-                <h3>Healthcare</h3>
-
-                <p>
-                    Modern digital experiences
-                    for hospitals and healthcare brands.
-                </p>
-
-            </div>
-
+            <p>
+              Modern digital experiences for hospitals and healthcare brands.
+            </p>
+          </div>
         </article>
 
         <!-- Card -->
 
         <article class="industry-card">
+          <img src="images/Finance.webp" />
 
-            <img src="images/Finance.webp">
+          <div class="industry-overlay">
+            <span>03</span>
 
-            <div class="industry-overlay">
+            <h3>Finance</h3>
 
-                <span>03</span>
-
-                <h3>Finance</h3>
-
-                <p>
-                    Secure fintech platforms
-                    and financial applications.
-                </p>
-
-            </div>
-
+            <p>Secure fintech platforms and financial applications.</p>
+          </div>
         </article>
 
         <!-- Card -->
 
         <article class="industry-card">
+          <img src="images/Education.webp" />
 
-            <img src="images/Education.webp">
+          <div class="industry-overlay">
+            <span>04</span>
 
-            <div class="industry-overlay">
+            <h3>Education</h3>
 
-                <span>04</span>
-
-                <h3>Education</h3>
-
-                <p>
-                    Learning platforms
-                    and education ecosystems.
-                </p>
-
-            </div>
-
+            <p>Learning platforms and education ecosystems.</p>
+          </div>
         </article>
 
         <!-- Card -->
 
         <article class="industry-card">
+          <img src="images/E-commerce.webp" />
 
-            <img src="images/E-commerce.webp">
+          <div class="industry-overlay">
+            <span>05</span>
 
-            <div class="industry-overlay">
+            <h3>E-Commerce</h3>
 
-                <span>05</span>
-
-                <h3>E-Commerce</h3>
-
-                <p>
-                    Online shopping experiences
-                    that increase conversions.
-                </p>
-
-            </div>
-
+            <p>Online shopping experiences that increase conversions.</p>
+          </div>
         </article>
 
         <!-- Card -->
 
         <article class="industry-card">
+          <img src="images/Technology.webp" />
 
-            <img src="images/Technology.webp">
+          <div class="industry-overlay">
+            <span>06</span>
 
-            <div class="industry-overlay">
+            <h3>Technology</h3>
 
-                <span>06</span>
-
-                <h3>Technology</h3>
-
-                <p>
-                    SaaS products,
-                    startups and enterprise software.
-                </p>
-
-            </div>
-
+            <p>SaaS products, startups and enterprise software.</p>
+          </div>
         </article>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- SECTION-4 -->
+    <!-- SECTION-4 -->
 
     <section class="accordion-wrap">
       <div class="accordion">
-        <article class="acc-item open ">
+        <article class="acc-item open">
           <button class="acc-head">
             <span class="acc-index">01</span>
             <span class="acc-title">Brand Strategy & Identity</span>
@@ -412,7 +389,10 @@
           </button>
           <div class="acc-body">
             <div class="acc-body-inner">
-              <p>Positioning, naming, visual identity, and the systems that keep them consistent across every touchpoint.</p>
+              <p>
+                Positioning, naming, visual identity, and the systems that keep
+                them consistent across every touchpoint.
+              </p>
               <ul class="acc-list">
                 <li>Market & audience research</li>
                 <li>Brand positioning & messaging</li>
@@ -420,13 +400,14 @@
                 <li>Brand guidelines</li>
               </ul>
               <div class="acc-tags">
-                <span>Research</span><span>Identity</span><span>Guidelines</span>
+                <span>Research</span><span>Identity</span
+                ><span>Guidelines</span>
               </div>
             </div>
           </div>
         </article>
 
-        <article class="acc-item ">
+        <article class="acc-item">
           <button class="acc-head">
             <span class="acc-index">02</span>
             <span class="acc-title">Digital Product Design</span>
@@ -434,19 +415,24 @@
           </button>
           <div class="acc-body">
             <div class="acc-body-inner">
-              <p>End-to-end product design from discovery to design system, built to ship and scale with your engineering team.</p>
+              <p>
+                End-to-end product design from discovery to design system, built
+                to ship and scale with your engineering team.
+              </p>
               <ul class="acc-list">
                 <li>UX research & journey mapping</li>
                 <li>Interface & interaction design</li>
                 <li>Prototyping & usability testing</li>
                 <li>Design systems</li>
               </ul>
-              <div class="acc-tags"><span>UX</span><span>UI</span><span>Systems</span></div>
+              <div class="acc-tags">
+                <span>UX</span><span>UI</span><span>Systems</span>
+              </div>
             </div>
           </div>
         </article>
 
-        <article class="acc-item ">
+        <article class="acc-item">
           <button class="acc-head">
             <span class="acc-index">03</span>
             <span class="acc-title">Web Design & Development</span>
@@ -454,19 +440,24 @@
           </button>
           <div class="acc-body">
             <div class="acc-body-inner">
-              <p>Marketing sites, portfolios, and interactive experiences — designed and engineered under one roof.</p>
+              <p>
+                Marketing sites, portfolios, and interactive experiences —
+                designed and engineered under one roof.
+              </p>
               <ul class="acc-list">
                 <li>Art direction & web design</li>
                 <li>Front-end development</li>
                 <li>CMS integration</li>
                 <li>Performance & SEO</li>
               </ul>
-              <div class="acc-tags"><span>Design</span><span>Dev</span><span>CMS</span></div>
+              <div class="acc-tags">
+                <span>Design</span><span>Dev</span><span>CMS</span>
+              </div>
             </div>
           </div>
         </article>
 
-        <article class="acc-item ">
+        <article class="acc-item">
           <button class="acc-head">
             <span class="acc-index">04</span>
             <span class="acc-title">Motion & Film</span>
@@ -474,19 +465,24 @@
           </button>
           <div class="acc-body">
             <div class="acc-body-inner">
-              <p>Brand films, product animation, and motion identity systems that bring static brands to life.</p>
+              <p>
+                Brand films, product animation, and motion identity systems that
+                bring static brands to life.
+              </p>
               <ul class="acc-list">
                 <li>Brand & product animation</li>
                 <li>Title sequences & motion identity</li>
                 <li>Commercial direction</li>
                 <li>Sound design</li>
               </ul>
-              <div class="acc-tags"><span>Motion</span><span>Film</span><span>Sound</span></div>
+              <div class="acc-tags">
+                <span>Motion</span><span>Film</span><span>Sound</span>
+              </div>
             </div>
           </div>
         </article>
 
-        <article class="acc-item ">
+        <article class="acc-item">
           <button class="acc-head">
             <span class="acc-index">05</span>
             <span class="acc-title">Art Direction & Photography</span>
@@ -494,19 +490,24 @@
           </button>
           <div class="acc-body">
             <div class="acc-body-inner">
-              <p>Campaign art direction, photography, and visual language for brands that need a distinct point of view.</p>
+              <p>
+                Campaign art direction, photography, and visual language for
+                brands that need a distinct point of view.
+              </p>
               <ul class="acc-list">
                 <li>Campaign art direction</li>
                 <li>Brand photography</li>
                 <li>Set & prop design</li>
                 <li>Retouch & color</li>
               </ul>
-              <div class="acc-tags"><span>Direction</span><span>Photo</span><span>Color</span></div>
+              <div class="acc-tags">
+                <span>Direction</span><span>Photo</span><span>Color</span>
+              </div>
             </div>
           </div>
         </article>
 
-        <article class="acc-item ">
+        <article class="acc-item">
           <button class="acc-head">
             <span class="acc-index">06</span>
             <span class="acc-title">Consulting & Workshops</span>
@@ -514,445 +515,334 @@
           </button>
           <div class="acc-body">
             <div class="acc-body-inner">
-              <p>Hands-on sprints and workshops to align teams, pressure-test ideas, and level up in-house craft.</p>
+              <p>
+                Hands-on sprints and workshops to align teams, pressure-test
+                ideas, and level up in-house craft.
+              </p>
               <ul class="acc-list">
                 <li>Brand & product sprints</li>
                 <li>Design critiques</li>
                 <li>Team training</li>
                 <li>Advisory retainers</li>
               </ul>
-              <div class="acc-tags"><span>Sprints</span><span>Training</span><span>Advisory</span></div>
+              <div class="acc-tags">
+                <span>Sprints</span><span>Training</span><span>Advisory</span>
+              </div>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-<!-- SECTION-5 -->
-<!--=========================================
+    <!-- SECTION-5 -->
+    <!--=========================================
         WHY CLIENTS CHOOSE STACKLY
 ==========================================-->
-<!--=========================================
+    <!--=========================================
         WHY CLIENTS CHOOSE STACKLY
 ==========================================-->
 
-<section class="trust-band">
-
-    <div class="trust-item">
-
+    <section class="trust-band">
+      <div class="trust-item">
         <h3>99%</h3>
 
         <p>Client Satisfaction</p>
+      </div>
 
-    </div>
+      <div class="divider"></div>
 
-    <div class="divider"></div>
-
-    <div class="trust-item">
-
+      <div class="trust-item">
         <h3>240+</h3>
 
         <p>Projects Delivered</p>
+      </div>
 
-    </div>
+      <div class="divider"></div>
 
-    <div class="divider"></div>
-
-    <div class="trust-item">
-
+      <div class="trust-item">
         <h3>10+</h3>
 
         <p>Years Experience</p>
+      </div>
 
-    </div>
+      <div class="divider"></div>
 
-    <div class="divider"></div>
-
-    <div class="trust-item">
-
+      <div class="trust-item">
         <h3>4.9★</h3>
 
         <p>Average Rating</p>
+      </div>
 
-    </div>
+      <div class="divider"></div>
 
-    <div class="divider"></div>
-
-    <div class="trust-item">
-
+      <div class="trust-item">
         <h3>24/7</h3>
 
         <p>Support</p>
+      </div>
+    </section>
 
-    </div>
+    <!-- SECTION-6 -->
+    <section class="capabilities">
+      <div class="cap-left">
+        <span class="section-tag"> Our Capabilities </span>
 
-</section>
-
-<!-- SECTION-6 -->
-<section class="capabilities">
-
-    <div class="cap-left">
-
-        <span class="section-tag">
-            Our Capabilities
-        </span>
-
-        <h2>
-            Everything your
-            brand needs
-            under one roof.
-        </h2>
+        <h2>Everything your brand needs under one roof.</h2>
 
         <p>
-            From strategy and design to development and launch,
-            we bring together every discipline needed to create
-            exceptional digital products.
+          From strategy and design to development and launch, we bring together
+          every discipline needed to create exceptional digital products.
         </p>
+      </div>
 
-    </div>
-
-    <div class="cap-right">
-
+      <div class="cap-right">
         <!-- 1 -->
 
         <article class="cap-item">
+          <img src="images/work-img 2.webp" />
 
-            <img src="images/work-img 2.webp">
+          <div>
+            <span>01</span>
 
-            <div>
+            <h3>Brand Strategy</h3>
 
-                <span>01</span>
-
-                <h3>Brand Strategy</h3>
-
-                <p>
-                    Research, positioning,
-                    messaging and identity.
-                </p>
-
-            </div>
-
+            <p>Research, positioning, messaging and identity.</p>
+          </div>
         </article>
 
         <!-- 2 -->
 
         <article class="cap-item">
+          <img src="images/UIUX Designer.webp" />
 
-            <img src="images/UIUX Designer.webp">
+          <div>
+            <span>02</span>
 
-            <div>
+            <h3>UI / UX Design</h3>
 
-                <span>02</span>
-
-                <h3>UI / UX Design</h3>
-
-                <p>
-                    Wireframes, prototypes,
-                    interfaces and systems.
-                </p>
-
-            </div>
-
+            <p>Wireframes, prototypes, interfaces and systems.</p>
+          </div>
         </article>
 
         <!-- 3 -->
 
         <article class="cap-item">
+          <img src="images/Web Design & Development.webp" />
 
-            <img src="images/Web Design & Development.webp">
+          <div>
+            <span>03</span>
 
-            <div>
+            <h3>Development</h3>
 
-                <span>03</span>
-
-                <h3>Development</h3>
-
-                <p>
-                    Modern websites,
-                    web applications and CMS.
-                </p>
-
-            </div>
-
+            <p>Modern websites, web applications and CMS.</p>
+          </div>
         </article>
 
         <!-- 4 -->
 
         <article class="cap-item">
+          <img src="images/Motion-Design.webp" />
 
-            <img src="images/Motion-Design.webp">
+          <div>
+            <span>04</span>
 
-            <div>
+            <h3>Motion Design</h3>
 
-                <span>04</span>
-
-                <h3>Motion Design</h3>
-
-                <p>
-                    Animation,
-                    product videos
-                    and brand films.
-                </p>
-
-            </div>
-
+            <p>Animation, product videos and brand films.</p>
+          </div>
         </article>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- SECTION-7 -->
-<!--=========================================
+    <!-- SECTION-7 -->
+    <!--=========================================
         SERVICE MOCKUP
 ==========================================-->
 
-<section class="service-showcase">
+    <section class="service-showcase">
+      <div class="service-left">
+        <span class="section-tag"> Featured Service </span>
 
-    <div class="service-left">
-
-        <span class="section-tag">
-            Featured Service
-        </span>
-
-        <h2>
-            Digital Product
-            Design
-        </h2>
+        <h2>Digital Product Design</h2>
 
         <p>
-
-            We create intuitive digital products
-            that combine outstanding user experience,
-            clean interfaces and scalable systems.
-
+          We create intuitive digital products that combine outstanding user
+          experience, clean interfaces and scalable systems.
         </p>
 
         <ul>
+          <li>UI / UX Design</li>
 
-            <li>UI / UX Design</li>
+          <li>Wireframes & Prototype</li>
 
-            <li>Wireframes & Prototype</li>
+          <li>Design Systems</li>
 
-            <li>Design Systems</li>
-
-            <li>User Testing</li>
-
+          <li>User Testing</li>
         </ul>
 
-        <a href="error.html" class="project-btn">
-
-            Explore Service →
-
-        </a>
-
-    </div>
-
-    <div class="service-right">
-
-        <div class="laptop">
-
-            <div class="screen">
-
-                <img src="images/Finance.webp">
-
-            </div>
-
-            <div class="base"></div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- SECTION-8 -->
-
-    <section class="process">
-      <div class="process-head ">
-        <span class="eyebrow section-tag">How we work</span>
-        <h2>A process built to ship.</h2>
+        <a href="error.html" class="project-btn"> Explore Service → </a>
       </div>
-      <div class="process-grid">
-        <div class="step ">
-          <span class="step-num">01</span>
-          <h3>Discover</h3>
-          <p>We dig into your business, users, and goals until we understand the problem better than the brief.</p>
-        </div>
-        <div class="step " >
-          <span class="step-num">02</span>
-          <h3>Define</h3>
-          <p>Strategy, positioning, and direction — agreed before a single pixel is drawn.</p>
-        </div>
-        <div class="step " >
-          <span class="step-num">03</span>
-          <h3>Design</h3>
-          <p>Concepts, iteration, and craft. Tight feedback loops, no black boxes.</p>
-        </div>
-        <div class="step " >
-          <span class="step-num">04</span>
-          <h3>Deliver</h3>
-          <p>Production-ready assets, documentation, and support through launch and beyond.</p>
+
+      <div class="service-right">
+        <div class="laptop">
+          <div class="screen">
+            <img src="images/Finance.webp" />
+          </div>
+
+          <div class="base"></div>
         </div>
       </div>
     </section>
 
-<!-- SECTION-9 -->
-<section class="case-study">
+    <!-- SECTION-8 -->
 
-    <div class="case-image">
+    <section class="process">
+      <div class="process-head">
+        <span class="eyebrow section-tag">How we work</span>
+        <h2>A process built to ship.</h2>
+      </div>
+      <div class="process-grid">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>Discover</h3>
+          <p>
+            We dig into your business, users, and goals until we understand the
+            problem better than the brief.
+          </p>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>Define</h3>
+          <p>
+            Strategy, positioning, and direction — agreed before a single pixel
+            is drawn.
+          </p>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>Design</h3>
+          <p>
+            Concepts, iteration, and craft. Tight feedback loops, no black
+            boxes.
+          </p>
+        </div>
+        <div class="step">
+          <span class="step-num">04</span>
+          <h3>Deliver</h3>
+          <p>
+            Production-ready assets, documentation, and support through launch
+            and beyond.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <img src="images/RealEstate.webp" alt="Luxury Real Estate">
+    <!-- SECTION-9 -->
+    <section class="case-study">
+      <div class="case-image">
+        <img src="images/RealEstate.webp" alt="Luxury Real Estate" />
+      </div>
 
-    </div>
+      <div class="case-content">
+        <span class="section-tag"> Featured Case Study </span>
 
-    <div class="case-content">
-
-        <span class="section-tag">
-            Featured Case Study
-        </span>
-
-        <h2>
-            Luxury Real
-            Estate Platform
-        </h2>
+        <h2>Luxury Real Estate Platform</h2>
 
         <p>
-
-            We partnered with a premium real estate company to
-            redesign their brand, improve user experience,
-            and build a modern property platform that
-            increased engagement and generated more leads.
-
+          We partnered with a premium real estate company to redesign their
+          brand, improve user experience, and build a modern property platform
+          that increased engagement and generated more leads.
         </p>
 
         <div class="case-services">
+          <span>Brand Identity</span>
 
-            <span>Brand Identity</span>
+          <span>UI / UX</span>
 
-            <span>UI / UX</span>
+          <span>Development</span>
 
-            <span>Development</span>
-
-            <span>SEO</span>
-
+          <span>SEO</span>
         </div>
 
         <div class="case-stats">
+          <div>
+            <h3>320%</h3>
 
-            <div>
+            <p>Traffic Growth</p>
+          </div>
 
-                <h3>320%</h3>
+          <div>
+            <h3>180%</h3>
 
-                <p>Traffic Growth</p>
+            <p>Lead Increase</p>
+          </div>
 
-            </div>
+          <div>
+            <h3>4.9★</h3>
 
-            <div>
-
-                <h3>180%</h3>
-
-                <p>Lead Increase</p>
-
-            </div>
-
-            <div>
-
-                <h3>4.9★</h3>
-
-                <p>Client Rating</p>
-
-            </div>
-
+            <p>Client Rating</p>
+          </div>
         </div>
 
-        <a href="error.html" class="case-btn">
+        <a href="error.html" class="case-btn"> View Case Study → </a>
+      </div>
+    </section>
 
-            View Case Study →
-
-        </a>
-
-    </div>
-
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-
-    <!--==============================
+    <!-- FOOTER -->
+    <footer class="footer">
+      <!--==============================
             MARQUEE
     ===============================-->
 
-    <div class="footer-marquee">
-
+      <div class="footer-marquee">
         <div class="footer-marquee-track">
-
-            <span>LET'S CREATE</span>
-            <span>LET'S CREATE</span>
-            <span>LET'S CREATE</span>
-            <span>LET'S CREATE</span>
-            <span>LET'S CREATE</span>
-
+          <span>LET'S CREATE</span>
+          <span>LET'S CREATE</span>
+          <span>LET'S CREATE</span>
+          <span>LET'S CREATE</span>
+          <span>LET'S CREATE</span>
         </div>
+      </div>
 
-    </div>
-
-    <!--==============================
+      <!--==============================
             FOOTER GRID
     ===============================-->
 
-    <div class="footer-grid">
-
+      <div class="footer-grid">
         <!--==============================
                 BRAND
         ===============================-->
 
         <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="images/logo.webp" alt="Stackly Logo" />
+          </a>
 
-            <a href="index.html" class="footer-logo">
+          <p>
+            Stackly is an independent creative studio specializing in branding,
+            UI/UX design, web development, and digital experiences for ambitious
+            businesses worldwide.
+          </p>
 
-    <img
-        src="images/logo.webp"
-        alt="Stackly Logo">
+          <div class="footer-stats">
+            <div>
+              <h3>240+</h3>
 
-</a>
-
-            <p>
-
-                Stackly is an independent creative studio specializing
-                in branding, UI/UX design, web development, and digital
-                experiences for ambitious businesses worldwide.
-
-            </p>
-
-            <div class="footer-stats">
-
-                <div>
-
-                    <h3>240+</h3>
-
-                    <span>Projects</span>
-
-                </div>
-
-                <div>
-
-                    <h3>68</h3>
-
-                    <span>Awards</span>
-
-                </div>
-
-                <div>
-
-                    <h3>12</h3>
-
-                    <span>Countries</span>
-
-                </div>
-
+              <span>Projects</span>
             </div>
 
+            <div>
+              <h3>68</h3>
+
+              <span>Awards</span>
+            </div>
+
+            <div>
+              <h3>12</h3>
+
+              <span>Countries</span>
+            </div>
+          </div>
         </div>
 
         <!--==============================
@@ -960,25 +850,21 @@
         ===============================-->
 
         <div>
+          <h4>Services</h4>
 
-            <h4>Services</h4>
+          <ul>
+            <li><a href="error.html">Brand Strategy</a></li>
 
-            <ul>
+            <li><a href="error.html">UI / UX Design</a></li>
 
-                <li><a href="error.html">Brand Strategy</a></li>
+            <li><a href="error.html">Web Development</a></li>
 
-                <li><a href="error.html">UI / UX Design</a></li>
+            <li><a href="error.html">Motion Design</a></li>
 
-                <li><a href="error.html">Web Development</a></li>
+            <li><a href="error.html">Digital Marketing</a></li>
 
-                <li><a href="error.html">Motion Design</a></li>
-
-                <li><a href="error.html">Digital Marketing</a></li>
-
-                <li><a href="error.html">Consulting</a></li>
-
-            </ul>
-
+            <li><a href="error.html">Consulting</a></li>
+          </ul>
         </div>
 
         <!--==============================
@@ -986,23 +872,19 @@
         ===============================-->
 
         <div>
+          <h4>Resources</h4>
 
-            <h4>Resources</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
 
-            <ul>
+            <li><a href="about.html">About</a></li>
 
-                <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
 
-                <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
 
-                <li><a href="services.html">Services</a></li>
-
-                <li><a href="work.html">Work</a></li>
-
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
 
         <!--==============================
@@ -1010,45 +892,21 @@
         ===============================-->
 
         <div>
+          <h4>Contact</h4>
 
-            <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="mailto:hello@stackly.studio"> hello@stackly.studio </a>
+            </li>
 
-            <ul>
+            <li>
+              <a href="tel:+14155550142"> +1 (415) 555-0142 </a>
+            </li>
 
-                <li>
+            <li>San Francisco, California</li>
 
-                    <a href="mailto:hello@stackly.studio">
-
-                        hello@stackly.studio
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="tel:+14155550142">
-
-                        +1 (415) 555-0142
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    San Francisco, California
-
-                </li>
-
-                <li>
-
-                    Mon – Fri · 9AM – 6PM
-
-                </li>
-
-            </ul>
-
+            <li>Mon – Fri · 9AM – 6PM</li>
+          </ul>
         </div>
 
         <!--==============================
@@ -1056,113 +914,69 @@
         ===============================-->
 
         <div class="newsletter">
+          <h4>Newsletter</h4>
 
-            <h4>Newsletter</h4>
+          <p>
+            Join thousands of founders, designers and developers receiving
+            monthly insights from Stackly.
+          </p>
 
-            <p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
 
-                Join thousands of founders, designers and developers
-                receiving monthly insights from Stackly.
+            <button type="submit">Subscribe</button>
+          </form>
 
-            </p>
-
-            <form class="newsletter-form">
-
-                <input
-
-                    type="email"
-
-                    placeholder="Enter your email"
-
-                    required>
-
-                <button type="submit">
-
-                    Subscribe
-
-                </button>
-
-            </form>
-
-            <small>
-
-                No spam. Unsubscribe anytime.
-
-            </small>
-
+          <small> No spam. Unsubscribe anytime. </small>
         </div>
+      </div>
 
-    </div>
-
-    <!--==============================
+      <!--==============================
             FOOTER BOTTOM
     ===============================-->
 
-    <div class="footer-bottom">
-
-        <span>
-
-            © 2026 Stackly Studio. All rights reserved.
-
-        </span>
+      <div class="footer-bottom">
+        <span> © 2026 Stackly Studio. All rights reserved. </span>
 
         <!-- Social Icons -->
 
         <div class="footer-social">
+          <a href="error.html" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
 
-            <a href="error.html" aria-label="Instagram">
+          <a href="error.html" aria-label="Behance">
+            <i class="fa-brands fa-behance"></i>
+          </a>
 
-                <i class="fa-brands fa-instagram"></i>
+          <a href="error.html" aria-label="Dribbble">
+            <i class="fa-brands fa-dribbble"></i>
+          </a>
 
-            </a>
+          <a href="error.html" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
 
-            <a href="error.html" aria-label="Behance">
+          <a href="error.html" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
 
-                <i class="fa-brands fa-behance"></i>
-
-            </a>
-
-            <a href="error.html" aria-label="Dribbble">
-
-                <i class="fa-brands fa-dribbble"></i>
-
-            </a>
-
-            <a href="error.html" aria-label="LinkedIn">
-
-                <i class="fa-brands fa-linkedin-in"></i>
-
-            </a>
-
-            <a href="error.html" aria-label="GitHub">
-
-                <i class="fa-brands fa-github"></i>
-
-            </a>
-
-            <a href="error.html" aria-label="Twitter">
-
-                <i class="fa-brands fa-x-twitter"></i>
-
-            </a>
-
+          <a href="error.html" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
         </div>
 
         <div class="footer-links">
+          <a href="error.html">Privacy</a>
 
-            <a href="error.html">Privacy</a>
+          <a href="error.html">Terms</a>
 
-            <a href="error.html">Terms</a>
+          <a href="error.html">Cookies</a>
 
-            <a href="error.html">Cookies</a>
-
-            <a href="error.html">Sitemap</a>
-
+          <a href="error.html">Sitemap</a>
         </div>
-
-    </div>
-
-</footer>
+      </div>
+    </footer>
 
     <script type="module" src="/main.js"></script>
     <script type="module" src="/services.js"></script>
