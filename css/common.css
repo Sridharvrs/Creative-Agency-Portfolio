@@ -86,7 +86,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
 .nav-cta {
   padding: 0.6rem 1.3rem;
-  border: 1px solid var(--line);
+  border: 1px solid rgb(208, 121, 67);
   border-radius: 100px;
   font-size: 0.88rem;
   font-weight: 600;
