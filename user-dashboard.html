@@ -1,0 +1,1242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Dashboard — Lumen Creative Agency</title>
+    <link rel="stylesheet" href="css/user-Dashboard.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="brand">
+            <div class="logo">
+                <a href="index.html" class="nav-logo">
+                    <img
+                        src="images/stackly_logo.webp"
+                        alt="Stackly Logo">
+                </a>
+                <span>client Portal</span>
+
+            </div>
+          
+        </div>
+
+        <nav class="nav">
+          <p class="nav-label">Workspace</p>
+          <a href="#overview" class="nav-item active" data-tab="overview">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="3" width="7" height="9" />
+              <rect x="14" y="3" width="7" height="5" />
+              <rect x="14" y="12" width="7" height="9" />
+              <rect x="3" y="16" width="7" height="5" />
+            </svg>
+            Overview
+          </a>
+          <a href="#projects" class="nav-item" data-tab="projects">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 7l9-4 9 4-9 4-9-4z" />
+              <path d="M3 12l9 4 9-4" />
+              <path d="M3 17l9 4 9-4" />
+            </svg>
+            My Projects
+          </a>
+          <a href="#messages" class="nav-item" data-tab="messages">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+              />
+            </svg>
+            Messages
+            <span class="badge">4</span>
+          </a>
+          <a href="#invoices" class="nav-item" data-tab="invoices">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              />
+              <path d="M14 2v6h6" />
+              <path d="M9 13h6M9 17h6" />
+            </svg>
+            Invoices
+          </a>
+          <a href="#files" class="nav-item" data-tab="files">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              />
+            </svg>
+            Files & Assets
+          </a>
+          <a href="#settings" class="nav-item" data-tab="settings">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09A1.65 1.65 0 0 0 15 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9c.14.34.22.7.22 1.08"
+              />
+            </svg>
+            Settings
+          </a>
+        </nav>
+
+        <div class="user-card">
+          <div class="avatar">EM</div>
+          <div>
+            <strong>Emma Martinez</strong>
+            <span>Northwind Studio</span>
+          </div>
+        </div>
+
+        <button id="logoutBtn" class="logout-btn">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </button>
+
+      </aside>
+
+      <!-- MAIN -->
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <p class="hello">Welcome back, Emma 👋</p>
+            <h2 id="tab-title">Overview</h2>
+          </div>
+          <div class="topbar-tools">
+            <div class="search">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+              <input placeholder="Search projects, invoices, files..." />
+            </div>
+            <button class="icon-btn" title="Notifications">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+                <path d="M13.7 21a2 2 0 0 1-3.4 0" />
+              </svg>
+              <span class="dot"></span>
+            </button>
+            <button class="btn primary">+ New Brief</button>
+          </div>
+        </header>
+
+        <!-- OVERVIEW TAB -->
+        <section class="tab active" id="tab-overview">
+          <div class="hero-banner">
+            <div>
+              <p class="tag">Active engagement</p>
+              <h3>Brand refresh + website redesign</h3>
+              <p class="muted">Phase 2 of 4 — Design exploration in progress</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: 62%"></div>
+              </div>
+              <div class="hero-meta">
+                <span>62% complete</span>
+                <span>• Next milestone: Aug 4</span>
+                <span>• Team: 5 designers</span>
+              </div>
+            </div>
+            <div class="hero-illus">
+              <div class="blob b1"></div>
+              <div class="blob b2"></div>
+              <div class="blob b3"></div>
+            </div>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat-card">
+              <span class="stat-label">Active Projects</span>
+              <div class="stat-val">4</div>
+              <span class="stat-trend up">+1 this month</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Hours this cycle</span>
+              <div class="stat-val">128</div>
+              <span class="stat-trend">of 160 retainer</span>
+              <div class="mini-bar"><i style="width: 80%"></i></div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Deliverables</span>
+              <div class="stat-val">27</div>
+              <span class="stat-trend up">12 approved</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Open Invoices</span>
+              <div class="stat-val">$8.4k</div>
+              <span class="stat-trend down">Due Jul 22</span>
+            </div>
+          </div>
+
+          <div class="two-col">
+            <div class="panel">
+              <div class="panel-head">
+                <h4>Project Activity</h4>
+                <select>
+                  <option>Last 30 days</option>
+                  <option>Last 7 days</option>
+                </select>
+              </div>
+              <div class="chart">
+                <svg viewBox="0 0 400 160" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="grad" x1="0" x2="0" y1="0" y2="1">
+                      <stop
+                        offset="0%"
+                        stop-color="#7c5cff"
+                        stop-opacity="0.4"
+                      />
+                      <stop
+                        offset="100%"
+                        stop-color="#7c5cff"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M0,120 L40,90 L80,100 L120,60 L160,75 L200,45 L240,55 L280,30 L320,50 L360,25 L400,40 L400,160 L0,160 Z"
+                    fill="url(#grad)"
+                  />
+                  <path
+                    d="M0,120 L40,90 L80,100 L120,60 L160,75 L200,45 L240,55 L280,30 L320,50 L360,25 L400,40"
+                    fill="none"
+                    stroke="#7c5cff"
+                    stroke-width="2.5"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head"><h4>Upcoming Milestones</h4></div>
+              <ul class="timeline">
+                <li>
+                  <span class="dot-pink"></span>
+                  <div>
+                    <strong>Design review call</strong><em>Jul 16 · 3:00 PM</em>
+                  </div>
+                </li>
+                <li>
+                  <span class="dot-blue"></span>
+                  <div>
+                    <strong>Homepage prototype delivery</strong><em>Jul 21</em>
+                  </div>
+                </li>
+                <li>
+                  <span class="dot-green"></span>
+                  <div><strong>Brand guidelines v2</strong><em>Aug 4</em></div>
+                </li>
+                <li>
+                  <span class="dot-orange"></span>
+                  <div><strong>Launch dry run</strong><em>Aug 18</em></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head">
+              <h4>Recent Activity</h4>
+              <a href="#" class="link">View all</a>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Project</th>
+                  <th>Status</th>
+                  <th>Updated</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Homepage hero — v3</td>
+                  <td>Brand Refresh</td>
+                  <td><span class="pill green">Approved</span></td>
+                  <td>2h ago</td>
+                </tr>
+                <tr>
+                  <td>Logo lockup exploration</td>
+                  <td>Brand Refresh</td>
+                  <td><span class="pill yellow">Review</span></td>
+                  <td>Yesterday</td>
+                </tr>
+                <tr>
+                  <td>Social launch templates</td>
+                  <td>Campaign Q3</td>
+                  <td><span class="pill blue">In progress</span></td>
+                  <td>2 days ago</td>
+                </tr>
+                <tr>
+                  <td>Motion sting — hero</td>
+                  <td>Campaign Q3</td>
+                  <td><span class="pill purple">Concept</span></td>
+                  <td>3 days ago</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- PROJECTS TAB -->
+        <section class="tab" id="tab-projects">
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="cover cover-1"></div>
+              <div class="body">
+                <span class="pill green">On Track</span>
+                <h4>Brand Refresh</h4>
+                <p>Identity, guidelines and touchpoints.</p>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 62%"></div>
+                </div>
+                <div class="foot"><span>62%</span><span>Due Aug 18</span></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="cover cover-2"></div>
+              <div class="body">
+                <span class="pill blue">In progress</span>
+                <h4>Website Redesign</h4>
+                <p>Full stack redesign + CMS migration.</p>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 40%"></div>
+                </div>
+                <div class="foot"><span>40%</span><span>Due Sep 05</span></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="cover cover-3"></div>
+              <div class="body">
+                <span class="pill yellow">Review</span>
+                <h4>Campaign Q3</h4>
+                <p>Multi-channel launch campaign.</p>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 78%"></div>
+                </div>
+                <div class="foot"><span>78%</span><span>Due Jul 30</span></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="cover cover-4"></div>
+              <div class="body">
+                <span class="pill purple">Concept</span>
+                <h4>Product Video</h4>
+                <p>60s hero product film + cutdowns.</p>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 15%"></div>
+                </div>
+                <div class="foot"><span>15%</span><span>Due Oct 12</span></div>
+              </div>
+            </article>
+          </div>
+
+          <!--  -->
+
+          <section class="featured-project">
+            <div class="featured-left">
+              <span class="project-badge"> ● Active Project </span>
+
+              <h2>AI Productivity Platform</h2>
+
+              <p>
+                Building a modern AI-powered productivity platform that helps
+                teams manage tasks, collaborate in real-time, automate
+                workflows, and monitor performance through a powerful analytics
+                dashboard.
+              </p>
+
+              <div class="featured-progress">
+                <div class="progress-head">
+                  <span>Project Progress</span>
+
+                  <strong>78%</strong>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 78%"></div>
+                </div>
+              </div>
+
+              <div class="project-buttons">
+                <button class="btn primary">View Project</button>
+
+                <button class="btn ghost">Open Files</button>
+
+                <button class="btn ghost">Timeline</button>
+              </div>
+            </div>
+
+            <div class="featured-right">
+              <img
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&auto=format&fit=crop"
+                alt="Project"
+              />
+            </div>
+
+          </section>
+
+          <div class="project-overview">
+            <div class="overview-card">
+              <span>Budget</span>
+
+              <h3>$24,500</h3>
+            </div>
+
+            <div class="overview-card">
+              <span>Team Members</span>
+
+              <h3>8</h3>
+            </div>
+
+            <div class="overview-card">
+              <span>Deadline</span>
+
+              <h3>28 Aug</h3>
+            </div>
+
+            <div class="overview-card">
+              <span>Tasks</span>
+
+              <h3>182 / 240</h3>
+            </div>
+          </div>
+
+          <div class="milestone-card">
+            <div>
+              <small>Next Milestone</small>
+
+              <h3>Interactive Dashboard Prototype</h3>
+
+              <p>Final UI review before development starts.</p>
+            </div>
+
+            <span> 6 Days Remaining </span>
+          </div>
+
+        </section>
+
+        <!-- MESSAGES TAB -->
+        <section class="tab" id="tab-messages">
+          <div class="chat-wrap">
+            <aside class="chat-list">
+              <div class="chat-item active">
+                <div class="avatar sm">JS</div>
+                <div>
+                  <strong>Jamie Sun</strong><span>Homepage looks 🔥</span>
+                </div>
+              </div>
+              <div class="chat-item">
+                <div class="avatar sm">RK</div>
+                <div>
+                  <strong>Ravi Kapoor</strong><span>Sending guidelines v2</span>
+                </div>
+              </div>
+              <div class="chat-item">
+                <div class="avatar sm">AL</div>
+                <div><strong>Ada Lee</strong><span>Ready for review</span></div>
+              </div>
+              <div class="chat-item">
+                <div class="avatar sm">TN</div>
+                <div>
+                  <strong>Tomás N.</strong><span>Motion draft attached</span>
+                </div>
+              </div>
+            </aside>
+            <div class="chat-thread">
+              <div class="chat-head">
+                <strong>Jamie Sun</strong> · Lead Designer
+              </div>
+              <div class="messages">
+                <div class="msg them">
+                  Hey Emma — dropped the latest homepage exploration in Figma.
+                </div>
+                <div class="msg me">Amazing, taking a look now.</div>
+                <div class="msg them">
+                  The hero direction leans a bit more editorial. Curious what
+                  you think about the typography.
+                </div>
+                <div class="msg me">
+                  Love the pairing. Let's push the accent color slightly warmer.
+                </div>
+              </div>
+              <div class="composer">
+                <input placeholder="Write a message..." />
+                <button class="btn primary">Send</button>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+<section class="ai-assistant">
+
+    <div class="ai-header">
+
+        <div class="ai-title">
+
+            <div class="ai-icon">
+
+                <i class="fa-solid fa-sparkles"></i>
+
+            </div>
+
+            <div>
+
+                <h2>Stackly AI Assistant</h2>
+
+                <p>Your intelligent project companion</p>
+
+            </div>
+
+        </div>
+
+        <span class="ai-status">
+
+            ● Online
+
+        </span>
+
+    </div>
+
+    <div class="ai-grid">
+
+        <div class="ai-card">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            <h3>Summarize Project</h3>
+
+            <p>
+
+                Generate a concise summary of the latest project activities.
+
+            </p>
+
+            <button>
+
+                Generate Summary
+
+            </button>
+
+        </div>
+
+        <div class="ai-card">
+
+            <i class="fa-solid fa-reply"></i>
+
+            <h3>Smart Reply</h3>
+
+            <p>
+
+                Instantly create professional replies for client messages.
+
+            </p>
+
+            <button>
+
+                Generate Reply
+
+            </button>
+
+        </div>
+
+        <div class="ai-card">
+
+            <i class="fa-solid fa-list-check"></i>
+
+            <h3>Create Tasks</h3>
+
+            <p>
+
+                Convert discussions into actionable project tasks automatically.
+
+            </p>
+
+            <button>
+
+                Create Tasks
+
+            </button>
+
+        </div>
+
+        <div class="ai-card">
+
+            <i class="fa-solid fa-language"></i>
+
+            <h3>Translate Message</h3>
+
+            <p>
+
+                Translate conversations into multiple languages instantly.
+
+            </p>
+
+            <button>
+
+                Translate
+
+            </button>
+
+        </div>
+
+        <div class="ai-card">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h3>Project Insights</h3>
+
+            <p>
+
+                Analyze project progress and identify potential risks.
+
+            </p>
+
+            <button>
+
+                Analyze
+
+            </button>
+
+        </div>
+
+        <div class="ai-card">
+
+            <i class="fa-solid fa-lightbulb"></i>
+
+            <h3>Improve Content</h3>
+
+            <p>
+
+                Rewrite reports, proposals and documentation professionally.
+
+            </p>
+
+            <button>
+
+                Optimize
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+        </section>
+
+        <!-- INVOICES TAB -->
+        <section class="tab" id="tab-invoices">
+          <div class="stat-grid">
+            <div class="stat-card">
+              <span class="stat-label">Paid YTD</span>
+              <div class="stat-val">$42,300</div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Outstanding</span>
+              <div class="stat-val">$8,400</div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Next Due</span>
+              <div class="stat-val">Jul 22</div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Retainer</span>
+              <div class="stat-val">Active</div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-head">
+              <h4>All Invoices</h4>
+              <button class="btn ghost">Download all</button>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Description</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Date</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>INV-0421</td>
+                  <td>Brand Refresh — Phase 2</td>
+                  <td>$4,800</td>
+                  <td><span class="pill yellow">Due</span></td>
+                  <td>Jul 22, 2026</td>
+                  <td><a href="#" class="link">View</a></td>
+                </tr>
+                <tr>
+                  <td>INV-0418</td>
+                  <td>Retainer — July</td>
+                  <td>$3,600</td>
+                  <td><span class="pill yellow">Due</span></td>
+                  <td>Jul 22, 2026</td>
+                  <td><a href="#" class="link">View</a></td>
+                </tr>
+                <tr>
+                  <td>INV-0405</td>
+                  <td>Campaign Q3 — Kickoff</td>
+                  <td>$6,200</td>
+                  <td><span class="pill green">Paid</span></td>
+                  <td>Jun 30, 2026</td>
+                  <td><a href="#" class="link">View</a></td>
+                </tr>
+                <tr>
+                  <td>INV-0392</td>
+                  <td>Retainer — June</td>
+                  <td>$3,600</td>
+                  <td><span class="pill green">Paid</span></td>
+                  <td>Jun 01, 2026</td>
+                  <td><a href="#" class="link">View</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!--  -->
+
+<section class="invoice-hero">
+
+    <div class="invoice-left">
+
+        <span class="invoice-tag">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+            Invoice Center
+        </span>
+
+        <h2>
+            Manage invoices,
+            payments & revenue
+            in one place.
+        </h2>
+
+        <p>
+
+            Track paid invoices, pending payments, upcoming due dates,
+            and overall business revenue with a centralized financial dashboard.
+
+        </p>
+
+        <div class="invoice-actions">
+
+            <button class="btn-primary">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Create Invoice
+
+            </button>
+
+            <button class="btn-outline">
+
+                <i class="fa-solid fa-download"></i>
+
+                Export Report
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="invoice-right">
+
+        <div class="invoice-card total">
+
+            <small>Total Revenue</small>
+
+            <h3>$84,560</h3>
+
+            <span>
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                +12.8% this month
+            </span>
+
+        </div>
+
+        <div class="invoice-mini-grid">
+
+            <div class="mini-card">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <h4>$58,300</h4>
+
+                <p>Paid</p>
+
+            </div>
+
+            <div class="mini-card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h4>$18,900</h4>
+
+                <p>Pending</p>
+
+            </div>
+
+            <div class="mini-card">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                <h4>$7,360</h4>
+
+                <p>Overdue</p>
+
+            </div>
+
+            <div class="mini-card">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <h4>18</h4>
+
+                <p>Invoices</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        </section>
+
+        <!-- FILES TAB -->
+        <section class="tab" id="tab-files">
+
+<section class="files-hero">
+
+    <div class="files-left">
+
+        <span class="files-tag">
+
+            <i class="fa-solid fa-folder-open"></i>
+
+            Files & Assets
+
+        </span>
+
+        <h2>
+
+            Organize, manage and
+            share all your project assets.
+
+        </h2>
+
+        <p>
+
+            Securely store design files, project documents, source code,
+            images and presentations in one centralized workspace with
+            real-time synchronization.
+
+        </p>
+
+        <div class="storage-progress">
+
+            <div class="storage-top">
+
+                <span>Storage Used</span>
+
+                <strong>184 GB / 250 GB</strong>
+
+            </div>
+
+            <div class="storage-bar">
+
+                <div class="storage-fill"></div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-actions">
+
+            <button class="btn-upload">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                Upload Files
+
+            </button>
+
+            <button class="btn-folder">
+
+                <i class="fa-solid fa-folder-plus"></i>
+
+                New Folder
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="files-right">
+
+        <div class="storage-card">
+
+            <small>Total Files</small>
+
+            <h3>184</h3>
+
+            <span>
+
+                +16 this week
+
+            </span>
+
+        </div>
+
+        <div class="mini-storage-grid">
+
+            <div class="mini-storage">
+
+                <i class="fa-solid fa-images"></i>
+
+                <h4>56 GB</h4>
+
+                <p>Images</p>
+
+            </div>
+
+            <div class="mini-storage">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                <h4>42 GB</h4>
+
+                <p>Documents</p>
+
+            </div>
+
+            <div class="mini-storage">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h4>31 GB</h4>
+
+                <p>Source Code</p>
+
+            </div>
+
+            <div class="mini-storage">
+
+                <i class="fa-solid fa-video"></i>
+
+                <h4>55 GB</h4>
+
+                <p>Videos</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--  -->
+          <div class="files-grid">
+            <div class="file">
+              <div class="thumb thumb-1"></div>
+              <strong>Homepage_v3.fig</strong><span>4.2 MB · Figma</span>
+            </div>
+            <div class="file">
+              <div class="thumb thumb-2"></div>
+              <strong>Brand_Guidelines.pdf</strong><span>12 MB · PDF</span>
+            </div>
+            <div class="file">
+              <div class="thumb thumb-3"></div>
+              <strong>Logo_Master.zip</strong><span>28 MB · Archive</span>
+            </div>
+            <div class="file">
+              <div class="thumb thumb-4"></div>
+              <strong>Motion_Sting.mp4</strong><span>84 MB · Video</span>
+            </div>
+            <div class="file">
+              <div class="thumb thumb-5"></div>
+              <strong>Photography_R1.zip</strong><span>210 MB · Archive</span>
+            </div>
+            <div class="file">
+              <div class="thumb thumb-6"></div>
+              <strong>Social_Kit.zip</strong><span>62 MB · Archive</span>
+            </div>
+          </div>
+
+<!--  -->
+<section class="ai-assets">
+
+    <div class="ai-assets-header">
+
+        <div class="ai-heading">
+
+            <div class="ai-logo">
+
+                <i class="fa-solid fa-sparkles"></i>
+
+            </div>
+
+            <div>
+
+                <span class="section-label">
+
+                    AI Powered
+
+                </span>
+
+                <h2>
+
+                    AI Asset Assistant
+
+                </h2>
+
+                <p>
+
+                    Organize, search and manage your project assets intelligently.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="ai-online">
+
+            <span></span>
+
+            AI Ready
+
+        </div>
+
+    </div>
+
+    <div class="ai-search">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            placeholder="Ask AI anything about your files...">
+
+        <button>
+
+            Ask AI
+
+        </button>
+
+    </div>
+
+    <div class="ai-grid">
+
+        <div class="ai-box">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <h3>
+
+                Organize Assets
+
+            </h3>
+
+            <p>
+
+                Automatically arrange files into smart folders.
+
+            </p>
+
+        </div>
+
+        <div class="ai-box">
+
+            <i class="fa-solid fa-copy"></i>
+
+            <h3>
+
+                Find Duplicates
+
+            </h3>
+
+            <p>
+
+                Detect duplicate images, PDFs and documents.
+
+            </p>
+
+        </div>
+
+        <div class="ai-box">
+
+            <i class="fa-solid fa-tags"></i>
+
+            <h3>
+
+                Generate Tags
+
+            </h3>
+
+            <p>
+
+                AI automatically tags every uploaded asset.
+
+            </p>
+
+        </div>
+
+        <div class="ai-box">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            <h3>
+
+                Summarize Document
+
+            </h3>
+
+            <p>
+
+                Create quick summaries from large documents.
+
+            </p>
+
+        </div>
+
+        <div class="ai-box">
+
+            <i class="fa-solid fa-pen-ruler"></i>
+
+            <h3>
+
+                Rename Files
+
+            </h3>
+
+            <p>
+
+                Rename hundreds of files consistently.
+
+            </p>
+
+        </div>
+
+        <div class="ai-box">
+
+            <i class="fa-solid fa-share-nodes"></i>
+
+            <h3>
+
+                Smart Sharing
+
+            </h3>
+
+            <p>
+
+                Suggest the best teammates to share files with.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+        </section>
+
+        <!-- SETTINGS TAB -->
+        <section class="tab" id="tab-settings">
+          <div class="panel">
+            <div class="panel-head"><h4>Profile</h4></div>
+            <div class="form-grid">
+              <label>Full name<input value="Emma Martinez" /></label>
+              <label>Company<input value="Northwind Studio" /></label>
+              <label>Email<input value="emma@northwind.co" /></label>
+              <label>Phone<input value="+1 (415) 555-0142" /></label>
+              <label class="col-2"
+                >Bio<textarea>
+Product designer focused on brand systems and editorial UI.</textarea
+                >
+              </label>
+            </div>
+            <button class="btn primary">Save changes</button>
+          </div>
+          <div class="panel">
+            <div class="panel-head"><h4>Preferences</h4></div>
+            <div class="pref">
+              <span>Email notifications</span
+              ><label class="switch"
+                ><input type="checkbox" checked /><i></i
+              ></label>
+            </div>
+            <div class="pref">
+              <span>Weekly summary report</span
+              ><label class="switch"
+                ><input type="checkbox" checked /><i></i
+              ></label>
+            </div>
+            <div class="pref">
+              <span>Dark mode</span
+              ><label class="switch"><input type="checkbox" /><i></i></label>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/user-dashboard.js"></script>
+  </body>
+</html>

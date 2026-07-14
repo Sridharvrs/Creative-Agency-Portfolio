@@ -8,24 +8,92 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
     <nav class="nav" id="nav">
-      <a href="/index.html" class="nav-logo"><span class="dot"></span>Stackly<span style="color:var(--accent)">.</span></a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/services.html">Services</a></li>
-        <li><a href="/work.html">Work</a></li>
-        <li><a href="/contact.html" class="active">Contact</a></li>
-      </ul>
-      <a href="login.html" class="nav-cta" id="navCta">Start a project</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
+
+    <a href="index.html" class="nav-logo">
+
+    <img
+        src="images/stackly_logo.webp"
+        alt="Stackly Logo">
+
+</a>
+
+    <ul class="nav-links" id="navLinks">
+        <!-- Mobile Header -->
+
+        <li class="mobile-header">
+
+            <a href="index.html" class="mobile-logo">
+
+                <img
+                    src="images/logo.webp"
+                    alt="Stackly Logo">
+
+            </a>
+
+        </li>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="services.html">Services</a></li>
+
+        <li><a href="work.html">Work</a></li>
+
+        <li><a href="contact.html" class="active">Contact</a></li>
+
+        <!-- Mobile Only -->
+
+        <li class="mobile-only">
+
+            <a href="login.html" class="mobile-btn">
+
+                Start a Project
+
+            </a>
+
+        </li>
+
+        <li class="mobile-contact">
+
+            <h4>Contact</h4>
+
+            <p>hello@stackly.studio</p>
+
+            <p>+1 (415) 555-0142</p>
+
+            <p>San Francisco, USA</p>
+
+        </li>
+
+    </ul>
+
+    <!-- Desktop Only -->
+
+    <a href="login.html" class="nav-cta">
+
+        Start a Project
+
+    </a>
+
+    <button class="nav-toggle" id="navToggle">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</nav>
 
 <!-- SECTION-1 -->
 <!--=========================================
@@ -130,10 +198,10 @@
         </div>
 
         <div class="contact-socials " data-delay="4">
-          <a href="#">Instagram</a>
-          <a href="#">Behance</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Dribbble</a>
+          <a href="error.html">Instagram</a>
+          <a href="error.html">Behance</a>
+          <a href="error.html">LinkedIn</a>
+          <a href="error.html">Dribbble</a>
         </div>
       </aside>
 
@@ -141,7 +209,7 @@
         <form class="contact-form" id="contactForm" Stacklylidate>
           <div class="field">
             <label for="name">Your name</label>
-            <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+            <input type="text" id="name" name="name" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')" placeholder="Jane Doe" required />
             <span class="field-error" data-for="name"></span>
           </div>
 
@@ -267,7 +335,7 @@
 
         </div>
 
-        <a href="#" class="studio-btn">
+        <a href="error.html" class="studio-btn">
 
             Get Directions →
 
@@ -316,13 +384,13 @@
 
         <div class="cta-buttons">
 
-            <a href="#" class="cta-primary">
+            <a href="error.html" class="cta-primary">
 
                 Start Your Project →
 
             </a>
 
-            <a href="#" class="cta-secondary">
+            <a href="error.html" class="cta-secondary">
 
                 Schedule a Call
 
@@ -336,23 +404,293 @@
 
 <!-- FOOTER -->
 
-    <footer class="footer">
-      <div class="footer-marquee">
+<!-- FOOTER -->
+<footer class="footer">
+
+    <!--==============================
+            MARQUEE
+    ===============================-->
+
+    <div class="footer-marquee">
+
         <div class="footer-marquee-track">
-          <span>Let's create</span><span>Let's create</span><span>Let's create</span><span>Let's create</span>
+
+            <span>LET'S CREATE</span>
+            <span>LET'S CREATE</span>
+            <span>LET'S CREATE</span>
+            <span>LET'S CREATE</span>
+            <span>LET'S CREATE</span>
+
         </div>
-      </div>
-      <div class="footer-grid">
+
+    </div>
+
+    <!--==============================
+            FOOTER GRID
+    ===============================-->
+
+    <div class="footer-grid">
+
+        <!--==============================
+                BRAND
+        ===============================-->
+
         <div class="footer-brand">
-          <a href="/index.html" class="nav-logo"><span class="dot"></span>Stackly<span style="color:var(--accent)">.</span></a>
-          <p>An independent creative studio building brands, products, and films for ambitious teams worldwide.</p>
+
+            <a href="index.html" class="footer-logo">
+
+    <img
+        src="images/logo.webp"
+        alt="Stackly Logo">
+
+</a>
+
+            <p>
+
+                Stackly is an independent creative studio specializing
+                in branding, UI/UX design, web development, and digital
+                experiences for ambitious businesses worldwide.
+
+            </p>
+
+            <div class="footer-stats">
+
+                <div>
+
+                    <h3>240+</h3>
+
+                    <span>Projects</span>
+
+                </div>
+
+                <div>
+
+                    <h3>68</h3>
+
+                    <span>Awards</span>
+
+                </div>
+
+                <div>
+
+                    <h3>12</h3>
+
+                    <span>Countries</span>
+
+                </div>
+
+            </div>
+
         </div>
-        <div><h4>Studio</h4><ul><li><a href="/about.html">About</a></li><li><a href="/services.html">Services</a></li><li><a href="/work.html">Work</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-        <div><h4>Social</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">Behance</a></li><li><a href="#">LinkedIn</a></li><li><a href="#">Dribbble</a></li></ul></div>
-        <div><h4>Contact</h4><ul><li><a href="#">hello@Stackly.studio</a></li><li><a href="#">+1 (415) 555-0142</a></li><li>San Francisco · NYC</li></ul></div>
-      </div>
-      <div class="footer-bottom"><span>© 2024 Stackly Studio. All rights reserved.</span><span>Designed & built in-house.</span></div>
-    </footer>
+
+        <!--==============================
+                SERVICES
+        ===============================-->
+
+        <div>
+
+            <h4>Services</h4>
+
+            <ul>
+
+                <li><a href="error.html">Brand Strategy</a></li>
+
+                <li><a href="error.html">UI / UX Design</a></li>
+
+                <li><a href="error.html">Web Development</a></li>
+
+                <li><a href="error.html">Motion Design</a></li>
+
+                <li><a href="error.html">Digital Marketing</a></li>
+
+                <li><a href="error.html">Consulting</a></li>
+
+            </ul>
+
+        </div>
+
+        <!--==============================
+                RESOURCES
+        ===============================-->
+
+        <div>
+
+            <h4>Resources</h4>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="work.html">Work</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <!--==============================
+                CONTACT
+        ===============================-->
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <ul>
+
+                <li>
+
+                    <a href="mailto:hello@stackly.studio">
+
+                        hello@stackly.studio
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="tel:+14155550142">
+
+                        +1 (415) 555-0142
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    San Francisco, California
+
+                </li>
+
+                <li>
+
+                    Mon – Fri · 9AM – 6PM
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!--==============================
+                NEWSLETTER
+        ===============================-->
+
+        <div class="newsletter">
+
+            <h4>Newsletter</h4>
+
+            <p>
+
+                Join thousands of founders, designers and developers
+                receiving monthly insights from Stackly.
+
+            </p>
+
+            <form class="newsletter-form">
+
+                <input
+
+                    type="email"
+
+                    placeholder="Enter your email"
+
+                    required>
+
+                <button type="submit">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+            <small>
+
+                No spam. Unsubscribe anytime.
+
+            </small>
+
+        </div>
+
+    </div>
+
+    <!--==============================
+            FOOTER BOTTOM
+    ===============================-->
+
+    <div class="footer-bottom">
+
+        <span>
+
+            © 2026 Stackly Studio. All rights reserved.
+
+        </span>
+
+        <!-- Social Icons -->
+
+        <div class="footer-social">
+
+            <a href="error.html" aria-label="Instagram">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+            <a href="error.html" aria-label="Behance">
+
+                <i class="fa-brands fa-behance"></i>
+
+            </a>
+
+            <a href="error.html" aria-label="Dribbble">
+
+                <i class="fa-brands fa-dribbble"></i>
+
+            </a>
+
+            <a href="error.html" aria-label="LinkedIn">
+
+                <i class="fa-brands fa-linkedin-in"></i>
+
+            </a>
+
+            <a href="error.html" aria-label="GitHub">
+
+                <i class="fa-brands fa-github"></i>
+
+            </a>
+
+            <a href="error.html" aria-label="Twitter">
+
+                <i class="fa-brands fa-x-twitter"></i>
+
+            </a>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="error.html">Privacy</a>
+
+            <a href="error.html">Terms</a>
+
+            <a href="error.html">Cookies</a>
+
+            <a href="error.html">Sitemap</a>
+
+        </div>
+
+    </div>
+
+</footer>
 
     <script type="module" src="/main.js"></script>
     <script type="module" src="/contact.js"></script>

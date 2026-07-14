@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Admin Console — Lumen Creative Agency</title>
+<link rel="stylesheet" href="css/admin-Dashboard.css"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="shell">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+            <a href="index.html" class="nav-logo">
+              <img
+                  src="images/stackly_logo.webp"
+                  alt="Stackly Logo">
+            </a>
+      
+    </div>
+
+    <div class="workspace">
+      <span>Workspace</span>
+      <select><option>Lumen Creative HQ</option><option>Berlin Studio</option></select>
+    </div>
+
+    <nav class="nav">
+      <a href="#" class="nav-item active" data-tab="analytics">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg> Analytics
+      </a>
+      <a href="#" class="nav-item" data-tab="clients">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Clients <span class="badge">128</span>
+      </a>
+      <a href="#" class="nav-item" data-tab="projects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Projects
+      </a>
+      <a href="#" class="nav-item" data-tab="team">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Team
+      </a>
+      <a href="#" class="nav-item" data-tab="finance">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Finance
+      </a>
+      <a href="#" class="nav-item" data-tab="content">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg> Content
+      </a>
+      <a href="#" class="nav-item" data-tab="security">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Security & Logs
+      </a>
+    </nav>
+
+    <div class="sys-status">
+      <div class="pulse"></div>
+      <div>
+        <strong>All systems normal</strong>
+        <span>Uptime 99.98%</span>
+      </div>
+    </div>
+
+    <button id="logoutBtn" class="logout-btn">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </button>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <header class="topbar">
+      <div class="crumbs">
+        <span>Console</span> / <span id="crumb">Analytics</span>
+      </div>
+      <div class="topbar-right">
+        <div class="kbar">
+          <kbd>⌘</kbd><kbd>K</kbd><span>Quick jump</span>
+        </div>
+        <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/></svg></button>
+        <div class="admin-me">
+          <div class="avatar">DK</div>
+          <div><strong>David Kim</strong><span>Superadmin</span></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ANALYTICS -->
+    <section class="tab active" id="tab-analytics">
+      <div class="page-head">
+        <div>
+          <h2>Agency Analytics</h2>
+          <p>Live overview across all active engagements.</p>
+        </div>
+        <div class="range-picker">
+          <button class="chip active">7D</button>
+          <button class="chip">30D</button>
+          <button class="chip">90D</button>
+          <button class="chip">YTD</button>
+        </div>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi">
+          <span class="kpi-label">Monthly Revenue</span>
+          <div class="kpi-val">$182,430</div>
+          <div class="kpi-trend up">▲ 12.4% vs last</div>
+          <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="0,20 15,18 30,12 45,15 60,8 75,10 90,4 100,7" fill="none" stroke="#22d3ee" stroke-width="2"/></svg>
+        </div>
+        <div class="kpi">
+          <span class="kpi-label">Active Projects</span>
+          <div class="kpi-val">42</div>
+          <div class="kpi-trend up">▲ 6 new</div>
+          <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="0,15 15,12 30,18 45,10 60,14 75,7 90,9 100,5" fill="none" stroke="#a855f7" stroke-width="2"/></svg>
+        </div>
+        <div class="kpi">
+          <span class="kpi-label">Clients</span>
+          <div class="kpi-val">128</div>
+          <div class="kpi-trend up">▲ 4</div>
+          <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="0,22 15,20 30,17 45,14 60,12 75,10 90,8 100,6" fill="none" stroke="#f5b301" stroke-width="2"/></svg>
+        </div>
+        <div class="kpi">
+          <span class="kpi-label">Utilization</span>
+          <div class="kpi-val">86%</div>
+          <div class="kpi-trend down">▼ 2.1%</div>
+          <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="0,10 15,14 30,8 45,18 60,12 75,20 90,16 100,22" fill="none" stroke="#f43f5e" stroke-width="2"/></svg>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="panel">
+          <div class="panel-head">
+            <h4>Revenue vs Expenses</h4>
+            <div class="legend"><span class="l l1"></span>Revenue <span class="l l2"></span>Expenses</div>
+          </div>
+          <div class="bars">
+            <div class="bar-row"><em>Jan</em><div class="bar-track"><div class="bar b1" style="width:70%"></div><div class="bar b2" style="width:48%"></div></div></div>
+            <div class="bar-row"><em>Feb</em><div class="bar-track"><div class="bar b1" style="width:78%"></div><div class="bar b2" style="width:52%"></div></div></div>
+            <div class="bar-row"><em>Mar</em><div class="bar-track"><div class="bar b1" style="width:85%"></div><div class="bar b2" style="width:58%"></div></div></div>
+            <div class="bar-row"><em>Apr</em><div class="bar-track"><div class="bar b1" style="width:72%"></div><div class="bar b2" style="width:55%"></div></div></div>
+            <div class="bar-row"><em>May</em><div class="bar-track"><div class="bar b1" style="width:92%"></div><div class="bar b2" style="width:60%"></div></div></div>
+            <div class="bar-row"><em>Jun</em><div class="bar-track"><div class="bar b1" style="width:88%"></div><div class="bar b2" style="width:57%"></div></div></div>
+            <div class="bar-row"><em>Jul</em><div class="bar-track"><div class="bar b1" style="width:96%"></div><div class="bar b2" style="width:62%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head"><h4>Project Categories</h4></div>
+          <div class="donut">
+            <svg viewBox="0 0 42 42">
+              <circle cx="21" cy="21" r="15.9" fill="none" stroke="#1a1a24" stroke-width="8"/>
+              <circle cx="21" cy="21" r="15.9" fill="none" stroke="#22d3ee" stroke-width="8" stroke-dasharray="35 100" stroke-dashoffset="25" transform="rotate(-90 21 21)"/>
+              <circle cx="21" cy="21" r="15.9" fill="none" stroke="#a855f7" stroke-width="8" stroke-dasharray="28 100" stroke-dashoffset="-10" transform="rotate(-90 21 21)"/>
+              <circle cx="21" cy="21" r="15.9" fill="none" stroke="#f5b301" stroke-width="8" stroke-dasharray="20 100" stroke-dashoffset="-38" transform="rotate(-90 21 21)"/>
+              <circle cx="21" cy="21" r="15.9" fill="none" stroke="#f43f5e" stroke-width="8" stroke-dasharray="17 100" stroke-dashoffset="-58" transform="rotate(-90 21 21)"/>
+            </svg>
+            <div class="donut-legend">
+              <div><i style="background:#22d3ee"></i>Branding <b>35%</b></div>
+              <div><i style="background:#a855f7"></i>Web <b>28%</b></div>
+              <div><i style="background:#f5b301"></i>Motion <b>20%</b></div>
+              <div><i style="background:#f43f5e"></i>Campaigns <b>17%</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="panel">
+          <div class="panel-head"><h4>Top Clients by Revenue</h4><a class="link">Export</a></div>
+          <table class="table">
+            <thead><tr><th>Client</th><th>Projects</th><th>Revenue</th><th>Health</th></tr></thead>
+            <tbody>
+              <tr><td><div class="cell"><div class="ava a1">NW</div>Northwind Studio</div></td><td>4</td><td>$48,200</td><td><span class="pill green">Strong</span></td></tr>
+              <tr><td><div class="cell"><div class="ava a2">OR</div>Orbit Retail</div></td><td>3</td><td>$36,900</td><td><span class="pill green">Strong</span></td></tr>
+              <tr><td><div class="cell"><div class="ava a3">HV</div>Havana Foods</div></td><td>2</td><td>$28,100</td><td><span class="pill yellow">Watch</span></td></tr>
+              <tr><td><div class="cell"><div class="ava a4">PX</div>Pixel Labs</div></td><td>2</td><td>$21,700</td><td><span class="pill green">Strong</span></td></tr>
+              <tr><td><div class="cell"><div class="ava a5">MO</div>Monolith Bank</div></td><td>1</td><td>$18,900</td><td><span class="pill red">At risk</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h4>Activity Feed</h4></div>
+          <ul class="feed">
+            <li><div class="ava a1">JS</div><div><strong>Jamie</strong> approved deliverable <em>Homepage v3</em><time>2m</time></div></li>
+            <li><div class="ava a2">RK</div><div><strong>Ravi</strong> logged 4h on <em>Campaign Q3</em><time>18m</time></div></li>
+            <li><div class="ava a3">AL</div><div><strong>Ada</strong> uploaded 12 assets<time>1h</time></div></li>
+            <li><div class="ava a4">TN</div><div><strong>Tomás</strong> closed invoice <em>#INV-0405</em><time>3h</time></div></li>
+            <li><div class="ava a5">MO</div><div><strong>Maya</strong> created project <em>Ember Rebrand</em><time>Yesterday</time></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="tab" id="tab-clients">
+      <div class="page-head"><h2>Clients</h2><button class="btn primary">+ Add Client</button></div>
+      <div class="panel">
+        <div class="toolbar">
+          <input class="search-lg" placeholder="Search 128 clients..."/>
+          <div class="range-picker"><button class="chip active">All</button><button class="chip">Retainer</button><button class="chip">Project</button><button class="chip">Prospect</button></div>
+        </div>
+        <table class="table">
+          <thead><tr><th>Client</th><th>Contact</th><th>Type</th><th>MRR</th><th>Since</th><th>Status</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><div class="cell"><div class="ava a1">NW</div>Northwind Studio</div></td><td>emma@northwind.co</td><td>Retainer</td><td>$3,600</td><td>Jan 2024</td><td><span class="pill green">Active</span></td><td>⋯</td></tr>
+            <tr><td><div class="cell"><div class="ava a2">OR</div>Orbit Retail</div></td><td>tom@orbit.io</td><td>Project</td><td>—</td><td>Mar 2024</td><td><span class="pill green">Active</span></td><td>⋯</td></tr>
+            <tr><td><div class="cell"><div class="ava a3">HV</div>Havana Foods</div></td><td>ana@havana.co</td><td>Retainer</td><td>$2,400</td><td>Sep 2023</td><td><span class="pill yellow">Renewal</span></td><td>⋯</td></tr>
+            <tr><td><div class="cell"><div class="ava a4">PX</div>Pixel Labs</div></td><td>hi@pixel.dev</td><td>Project</td><td>—</td><td>Jun 2024</td><td><span class="pill green">Active</span></td><td>⋯</td></tr>
+            <tr><td><div class="cell"><div class="ava a5">MO</div>Monolith Bank</div></td><td>ir@monolith.com</td><td>Retainer</td><td>$8,500</td><td>Nov 2022</td><td><span class="pill red">At risk</span></td><td>⋯</td></tr>
+            <tr><td><div class="cell"><div class="ava a1">EM</div>Ember Co.</div></td><td>ceo@ember.xyz</td><td>Prospect</td><td>—</td><td>—</td><td><span class="pill blue">Pitch</span></td><td>⋯</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="tab" id="tab-projects">
+      <div class="page-head"><h2>Projects Kanban</h2><button class="btn primary">+ New Project</button></div>
+      <div class="kanban">
+        <div class="col">
+          <div class="col-head"><strong>Backlog</strong><span>3</span></div>
+          <div class="task"><span class="tag t1">Web</span><h5>Ember rebrand kickoff</h5><p>Discovery, workshops</p><div class="task-foot"><div class="ava a1">MO</div><time>Aug 1</time></div></div>
+          <div class="task"><span class="tag t2">Motion</span><h5>Product film</h5><p>60s hero + cutdowns</p><div class="task-foot"><div class="ava a2">TN</div><time>Aug 5</time></div></div>
+          <div class="task"><span class="tag t3">Brand</span><h5>Havana Q4 refresh</h5><p>Guidelines update</p><div class="task-foot"><div class="ava a3">AL</div><time>Aug 12</time></div></div>
+        </div>
+        <div class="col">
+          <div class="col-head"><strong>In Progress</strong><span>4</span></div>
+          <div class="task"><span class="tag t1">Web</span><h5>Northwind redesign</h5><p>Phase 2 · design</p><div class="task-foot"><div class="ava a1">JS</div><time>Jul 21</time></div></div>
+          <div class="task"><span class="tag t4">Campaign</span><h5>Orbit launch</h5><p>Multi-channel Q3</p><div class="task-foot"><div class="ava a2">RK</div><time>Jul 30</time></div></div>
+          <div class="task"><span class="tag t3">Brand</span><h5>Pixel identity</h5><p>Logo + system</p><div class="task-foot"><div class="ava a4">AL</div><time>Aug 2</time></div></div>
+          <div class="task"><span class="tag t2">Motion</span><h5>Monolith sting</h5><p>Broadcast package</p><div class="task-foot"><div class="ava a5">TN</div><time>Aug 8</time></div></div>
+        </div>
+        <div class="col">
+          <div class="col-head"><strong>Review</strong><span>2</span></div>
+          <div class="task"><span class="tag t1">Web</span><h5>Havana site v2</h5><p>Client review</p><div class="task-foot"><div class="ava a3">JS</div><time>Jul 18</time></div></div>
+          <div class="task"><span class="tag t4">Campaign</span><h5>Orbit teaser assets</h5><p>Round 2</p><div class="task-foot"><div class="ava a2">RK</div><time>Jul 19</time></div></div>
+        </div>
+        <div class="col">
+          <div class="col-head"><strong>Done</strong><span>2</span></div>
+          <div class="task done"><span class="tag t3">Brand</span><h5>Northwind logo</h5><p>Approved</p><div class="task-foot"><div class="ava a1">JS</div><time>Jul 08</time></div></div>
+          <div class="task done"><span class="tag t2">Motion</span><h5>Pixel intro</h5><p>Delivered</p><div class="task-foot"><div class="ava a4">TN</div><time>Jul 04</time></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="tab" id="tab-team">
+      <div class="page-head"><h2>Team</h2><button class="btn primary">+ Invite</button></div>
+      <div class="team-grid">
+        <div class="member"><div class="ava a1 lg">JS</div><h4>Jamie Sun</h4><span>Lead Designer</span><div class="util"><em>Utilization</em><div class="bar-track sm"><div class="bar b1" style="width:88%"></div></div><b>88%</b></div></div>
+        <div class="member"><div class="ava a2 lg">RK</div><h4>Ravi Kapoor</h4><span>Art Director</span><div class="util"><em>Utilization</em><div class="bar-track sm"><div class="bar b1" style="width:74%"></div></div><b>74%</b></div></div>
+        <div class="member"><div class="ava a3 lg">AL</div><h4>Ada Lee</h4><span>Brand Designer</span><div class="util"><em>Utilization</em><div class="bar-track sm"><div class="bar b1" style="width:92%"></div></div><b>92%</b></div></div>
+        <div class="member"><div class="ava a4 lg">TN</div><h4>Tomás Núñez</h4><span>Motion Designer</span><div class="util"><em>Utilization</em><div class="bar-track sm"><div class="bar b1" style="width:65%"></div></div><b>65%</b></div></div>
+        <div class="member"><div class="ava a5 lg">MO</div><h4>Maya Osei</h4><span>Producer</span><div class="util"><em>Utilization</em><div class="bar-track sm"><div class="bar b1" style="width:80%"></div></div><b>80%</b></div></div>
+        <div class="member"><div class="ava a1 lg">DK</div><h4>David Kim</h4><span>Founder</span><div class="util"><em>Utilization</em><div class="bar-track sm"><div class="bar b1" style="width:55%"></div></div><b>55%</b></div></div>
+      </div>
+    </section>
+
+    <!-- FINANCE -->
+    <section class="tab" id="tab-finance">
+      <div class="page-head"><h2>Finance</h2></div>
+      <div class="kpi-grid">
+        <div class="kpi"><span class="kpi-label">Revenue MTD</span><div class="kpi-val">$182k</div><div class="kpi-trend up">▲ 12%</div></div>
+        <div class="kpi"><span class="kpi-label">Outstanding</span><div class="kpi-val">$46k</div><div class="kpi-trend down">▼ 4%</div></div>
+        <div class="kpi"><span class="kpi-label">Profit Margin</span><div class="kpi-val">38%</div><div class="kpi-trend up">▲ 2.1%</div></div>
+        <div class="kpi"><span class="kpi-label">Runway</span><div class="kpi-val">14mo</div><div class="kpi-trend">Stable</div></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h4>Recent Invoices</h4><button class="btn ghost">+ Invoice</button></div>
+        <table class="table">
+          <thead><tr><th>#</th><th>Client</th><th>Amount</th><th>Status</th><th>Issued</th><th>Due</th></tr></thead>
+          <tbody>
+            <tr><td>INV-0421</td><td>Northwind</td><td>$4,800</td><td><span class="pill yellow">Sent</span></td><td>Jul 10</td><td>Jul 22</td></tr>
+            <tr><td>INV-0420</td><td>Orbit Retail</td><td>$12,000</td><td><span class="pill yellow">Sent</span></td><td>Jul 09</td><td>Jul 24</td></tr>
+            <tr><td>INV-0418</td><td>Havana</td><td>$2,400</td><td><span class="pill green">Paid</span></td><td>Jul 01</td><td>Jul 15</td></tr>
+            <tr><td>INV-0415</td><td>Monolith</td><td>$8,500</td><td><span class="pill red">Overdue</span></td><td>Jun 20</td><td>Jul 05</td></tr>
+            <tr><td>INV-0410</td><td>Pixel</td><td>$3,200</td><td><span class="pill green">Paid</span></td><td>Jun 12</td><td>Jun 26</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="tab" id="tab-content">
+      <div class="page-head"><h2>Website Content</h2><button class="btn primary">+ New Case Study</button></div>
+      <div class="grid-3">
+        <div class="content-card"><div class="ch ch1"></div><span class="pill green">Published</span><h4>Northwind Rebrand</h4><p>Case study · Branding</p><div class="cf"><span>👁 2,431</span><span>♥ 128</span></div></div>
+        <div class="content-card"><div class="ch ch2"></div><span class="pill yellow">Draft</span><h4>Orbit Launch</h4><p>Case study · Campaign</p><div class="cf"><span>👁 —</span><span>♥ —</span></div></div>
+        <div class="content-card"><div class="ch ch3"></div><span class="pill green">Published</span><h4>Havana Guidelines</h4><p>Case study · Brand</p><div class="cf"><span>👁 1,204</span><span>♥ 88</span></div></div>
+        <div class="content-card"><div class="ch ch4"></div><span class="pill blue">Scheduled</span><h4>Pixel Identity</h4><p>Case study · Brand</p><div class="cf"><span>Aug 1</span><span></span></div></div>
+        <div class="content-card"><div class="ch ch5"></div><span class="pill green">Published</span><h4>Motion Reel 2026</h4><p>Showreel</p><div class="cf"><span>👁 8,904</span><span>♥ 412</span></div></div>
+        <div class="content-card"><div class="ch ch6"></div><span class="pill yellow">Draft</span><h4>Design ethics essay</h4><p>Journal</p><div class="cf"><span>—</span><span>—</span></div></div>
+      </div>
+    </section>
+
+    <!-- SECURITY -->
+    <section class="tab" id="tab-security">
+      <div class="page-head"><h2>Security & Audit Logs</h2></div>
+      <div class="kpi-grid">
+        <div class="kpi"><span class="kpi-label">MFA Enabled</span><div class="kpi-val">98%</div><div class="kpi-trend up">Compliant</div></div>
+        <div class="kpi"><span class="kpi-label">Failed logins (24h)</span><div class="kpi-val">7</div><div class="kpi-trend">Normal</div></div>
+        <div class="kpi"><span class="kpi-label">Active sessions</span><div class="kpi-val">32</div><div class="kpi-trend">—</div></div>
+        <div class="kpi"><span class="kpi-label">Alerts</span><div class="kpi-val">0</div><div class="kpi-trend up">Clear</div></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h4>Audit Log</h4><a class="link">Export CSV</a></div>
+        <div class="log">
+          <div class="log-row ok"><time>14:22:03</time><code>auth.login</code><span>david@lumen.co · 10.0.24.11 · macOS/Chrome</span></div>
+          <div class="log-row ok"><time>14:19:41</time><code>project.create</code><span>maya@lumen.co · created "Ember Rebrand"</span></div>
+          <div class="log-row warn"><time>13:58:12</time><code>auth.fail</code><span>unknown@—— · 5 attempts · rate limited</span></div>
+          <div class="log-row ok"><time>13:41:07</time><code>invoice.send</code><span>maya@lumen.co · INV-0421 to Northwind</span></div>
+          <div class="log-row ok"><time>12:29:55</time><code>file.upload</code><span>ada@lumen.co · 12 assets → Pixel Labs</span></div>
+          <div class="log-row err"><time>10:15:32</time><code>webhook.fail</code><span>stripe.invoice.paid · retried 3x → resolved</span></div>
+          <div class="log-row ok"><time>09:02:11</time><code>auth.login</code><span>jamie@lumen.co · 10.0.24.03</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="js/admin-dashboard.js"></script>
+</body>
+</html>

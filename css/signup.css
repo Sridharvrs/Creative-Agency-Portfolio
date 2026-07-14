@@ -887,3 +887,57 @@ width:100%;
 }
 
 }
+
+/*======================================
+            CLOSE BUTTON
+======================================*/
+
+.close-btn{
+
+    position:fixed;
+
+    top:30px;
+
+    right:35px;
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    z-index:999;
+
+    transition:.35s;
+
+}
+
+.close-btn:hover{
+
+    background:var(--accent);
+
+    border-color:var(--accent);
+
+    transform:rotate(90deg) scale(1.08);
+
+    box-shadow:0 15px 30px rgba(255,107,0,.35);
+
+}

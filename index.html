@@ -8,24 +8,95 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
+    
     <nav class="nav" id="nav">
-      <a href="/index.html" class="nav-logo"><span class="dot"></span>Stackly<span style="color:var(--accent)">.</span></a>
-      <ul class="nav-links" id="navLinks">
+
+    <a href="index.html" class="nav-logo">
+
+    <img
+        src="images/stackly_logo.webp"
+        alt="Stackly Logo">
+
+</a>
+
+    <ul class="nav-links" id="navLinks">
+        <!-- Mobile Header -->
+
+        <li class="mobile-header">
+
+            <a href="index.html" class="mobile-logo">
+
+                <img
+                    src="images/logo.webp"
+                    alt="Stackly Logo">
+
+            </a>
+
+        </li>
+
         <li><a href="index.html" class="active">Home</a></li>
+
         <li><a href="about.html">About</a></li>
+
         <li><a href="services.html">Services</a></li>
+
         <li><a href="work.html">Work</a></li>
+
         <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <a href="login.html" class="nav-cta" id="navCta">Start a project</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
+
+        <!-- Mobile Only -->
+
+        <li class="mobile-only">
+
+            <a href="login.html" class="mobile-btn">
+
+                Start a Project
+
+            </a>
+
+        </li>
+
+        <li class="mobile-contact">
+
+            <h4>Contact</h4>
+
+            <p>hello@stackly.studio</p>
+
+            <p>+1 (415) 555-0142</p>
+
+            <p>San Francisco, USA</p>
+
+        </li>
+
+    </ul>
+
+    <!-- Desktop Only -->
+
+    <a href="login.html" class="nav-cta">
+
+        Start a Project
+
+    </a>
+
+    <button class="nav-toggle" id="navToggle">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
 
 <header class="hero">
 
@@ -56,11 +127,11 @@
             </p>
 
             <div class="hero-actions">
-                <a href="/work.html" class="btn btn-primary">
+                <a href="error.html" class="btn btn-primary">
                     View our work →
                 </a>
 
-                <a href="/contact.html" class="btn btn-ghost">
+                <a href="error.html" class="btn btn-ghost">
                     Let's talk
                 </a>
             </div>
@@ -73,19 +144,19 @@
 
             <div class="hero-main">
 
-                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80">
+                <img src="images/img-1-5-office.webp">
 
             </div>
 
             <div class="hero-card card-top">
 
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80">
+                <img src="images/img-2-teach.webp">
 
             </div>
 
             <div class="hero-card card-bottom">
 
-                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80">
+                <img src="images/img-3.webp">
 
             </div>
 
@@ -145,7 +216,7 @@
      <section class="portfolio-slider">
 
     <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1600&q=80" alt="">
+        <img src="images/img-4-10-Luxury Residence.webp" alt="">
         <div class="overlay">
             <span>Brand Identity</span>
             <h3>Luxury Residence</h3>
@@ -153,7 +224,7 @@
     </div>
 
     <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80" alt="">
+        <img src="images/Creative_workspace.webp" alt="">
         <div class="overlay">
             <span>Creative Workspace</span>
             <h3>Stackly Office</h3>
@@ -161,7 +232,7 @@
     </div>
 
     <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80" alt="">
+        <img src="images/Interior_design.webp" alt="">
         <div class="overlay">
             <span>Interior Design</span>
             <h3>Minimal Living</h3>
@@ -180,7 +251,7 @@
 
         <h2>Selected work.</h2>
 
-        <a href="work.html" class="link-arrow">
+        <a href="error.html" class="link-arrow">
             All Projects <span>→</span>
         </a>
 
@@ -194,7 +265,7 @@
 
             <div class="card-img">
 
-                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1600&q=80" alt="StacklyFlow AI">
+                <img src="images/AI_platform.webp" alt="StacklyFlow AI">
 
             </div>
 
@@ -216,7 +287,7 @@
 
             <div class="card-img">
 
-                <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80" alt="Vault Finance">
+                <img src="images/Vault Finance.webp" alt="Vault Finance">
 
             </div>
 
@@ -238,7 +309,7 @@
 
             <div class="card-img">
 
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Pixel Studio">
+                <img src="images/Pixel Studio.webp" alt="Pixel Studio">
 
             </div>
 
@@ -265,7 +336,7 @@
     <div class="split-row">
 
         <div class="split-image">
-            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1600&q=80" alt="">
+            <img src="images/Finance.webp" alt="">
         </div>
 
         <div class="split-content">
@@ -279,7 +350,7 @@
                 connect with audiences worldwide.
             </p>
 
-            <a href="#" class="split-btn">
+            <a href="error.html" class="split-btn">
                 Explore Project →
             </a>
 
@@ -292,7 +363,7 @@
     <div class="split-row reverse">
 
         <div class="split-image">
-            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80" alt="">
+            <img src="images/Digital Experience.webp" alt="">
         </div>
 
         <div class="split-content">
@@ -306,7 +377,7 @@
                 seamless user experiences across every device.
             </p>
 
-            <a href="#" class="split-btn">
+            <a href="error.html" class="split-btn">
                 View Case Study →
             </a>
 
@@ -332,7 +403,7 @@
 
         <!-- Before -->
         <img
-            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80"
+            src="images/img-4-10-Luxury Residence.webp"
             alt="Before"
         >
 
@@ -340,7 +411,7 @@
         <div class="compare-after">
 
             <img
-                src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1600&q=80"
+                src="images/img-1-5-office.webp"
                 alt="After"
             >
 
@@ -380,7 +451,7 @@
         <div class="timeline-item">
 
             <div class="timeline-image">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="">
+                <img src="images/AI_platform.webp" alt="">
             </div>
 
             <div class="timeline-content">
@@ -395,7 +466,7 @@
         <div class="timeline-item reverse">
 
             <div class="timeline-image">
-                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80" alt="">
+                <img src="images/Technology.webp" alt="">
             </div>
 
             <div class="timeline-content">
@@ -410,7 +481,7 @@
         <div class="timeline-item">
 
             <div class="timeline-image">
-                <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=80" alt="">
+                <img src="images/Web Design & Development.webp" alt="">
             </div>
 
             <div class="timeline-content">
@@ -425,7 +496,7 @@
         <div class="timeline-item reverse">
 
             <div class="timeline-image">
-                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80" alt="">
+                <img src="images/Launch & Growth.webp" alt="">
             </div>
 
             <div class="timeline-content">
@@ -568,7 +639,7 @@
 
         <!-- Card 1 -->
         <article class="stack-card">
-            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1600&q=80" alt="">
+            <img src="images/img-4-10-Luxury Residence.webp" alt="">
 
             <div class="stack-content">
                 <span>Brand Identity</span>
@@ -577,13 +648,13 @@
                     Crafted a timeless visual identity for a premium
                     architecture brand.
                 </p>
-                <a href="#">View Project →</a>
+                <a href="error.html">View Project →</a>
             </div>
         </article>
 
         <!-- Card 2 -->
         <article class="stack-card">
-            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80" alt="">
+            <img src="images/Minimal Living.webp" alt="">
 
             <div class="stack-content">
                 <span>Creative Studio</span>
@@ -592,13 +663,13 @@
                     A collaborative office experience with modern UI
                     and immersive branding.
                 </p>
-                <a href="#">View Project →</a>
+                <a href="error.html">View Project →</a>
             </div>
         </article>
 
         <!-- Card 3 -->
         <article class="stack-card">
-            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80" alt="">
+            <img src="images/Minimal Living.webp" alt="">
 
             <div class="stack-content">
                 <span>Interior Design</span>
@@ -607,7 +678,7 @@
                     Elegant interiors focused on simplicity,
                     functionality and premium aesthetics.
                 </p>
-                <a href="#">View Project →</a>
+                <a href="error.html">View Project →</a>
             </div>
         </article>
 
@@ -620,53 +691,298 @@
     <section class="cta-band">
       <h2 class="cta-title ">Have a project in mind?</h2>
       <p class="" >We take on a limited number of partners each quarter. Let's see if we're a fit.</p>
-      <a href="/contact.html" class="btn btn-primary " >Start a project <span class="arrow">→</span></a>
+      <a href="error.html" class="btn btn-primary " >Start a project <span class="arrow">→</span></a>
     </section>
 
-    <footer class="footer">
-      <div class="footer-marquee">
+<!-- FOOTER -->
+<footer class="footer">
+
+    <!--==============================
+            MARQUEE
+    ===============================-->
+
+    <div class="footer-marquee">
+
         <div class="footer-marquee-track">
-          <span>Let's create</span><span>Let's create</span><span>Let's create</span><span>Let's create</span>
+
+            <span>LET'S CREATE</span>
+            <span>LET'S CREATE</span>
+            <span>LET'S CREATE</span>
+            <span>LET'S CREATE</span>
+            <span>LET'S CREATE</span>
+
         </div>
-      </div>
-      <div class="footer-grid">
+
+    </div>
+
+    <!--==============================
+            FOOTER GRID
+    ===============================-->
+
+    <div class="footer-grid">
+
+        <!--==============================
+                BRAND
+        ===============================-->
+
         <div class="footer-brand">
-          <a href="/index.html" class="nav-logo"><span class="dot"></span>Stackly<span style="color:var(--accent)">.</span></a>
-          <p>An independent creative studio building brands, products, and films for ambitious teams worldwide.</p>
+
+            <a href="index.html" class="footer-logo">
+
+    <img
+        src="images/logo.webp"
+        alt="Stackly Logo">
+
+</a>
+
+            <p>
+
+                Stackly is an independent creative studio specializing
+                in branding, UI/UX design, web development, and digital
+                experiences for ambitious businesses worldwide.
+
+            </p>
+
+            <div class="footer-stats">
+
+                <div>
+
+                    <h3>240+</h3>
+
+                    <span>Projects</span>
+
+                </div>
+
+                <div>
+
+                    <h3>68</h3>
+
+                    <span>Awards</span>
+
+                </div>
+
+                <div>
+
+                    <h3>12</h3>
+
+                    <span>Countries</span>
+
+                </div>
+
+            </div>
+
         </div>
+
+        <!--==============================
+                SERVICES
+        ===============================-->
+
         <div>
-          <h4>Studio</h4>
-          <ul>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="/work.html">Work</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-          </ul>
+
+            <h4>Services</h4>
+
+            <ul>
+
+                <li><a href="error.html">Brand Strategy</a></li>
+
+                <li><a href="error.html">UI / UX Design</a></li>
+
+                <li><a href="error.html">Web Development</a></li>
+
+                <li><a href="error.html">Motion Design</a></li>
+
+                <li><a href="error.html">Digital Marketing</a></li>
+
+                <li><a href="error.html">Consulting</a></li>
+
+            </ul>
+
         </div>
+
+        <!--==============================
+                RESOURCES
+        ===============================-->
+
         <div>
-          <h4>Social</h4>
-          <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Behance</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Dribbble</a></li>
-          </ul>
+
+            <h4>Resources</h4>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="work.html">Work</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
         </div>
+
+        <!--==============================
+                CONTACT
+        ===============================-->
+
         <div>
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="#">hello@Stackly.studio</a></li>
-            <li><a href="#">+1 (415) 555-0142</a></li>
-            <li>San Francisco · NYC</li>
-          </ul>
+
+            <h4>Contact</h4>
+
+            <ul>
+
+                <li>
+
+                    <a href="mailto:hello@stackly.studio">
+
+                        hello@stackly.studio
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="tel:+14155550142">
+
+                        +1 (415) 555-0142
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    San Francisco, California
+
+                </li>
+
+                <li>
+
+                    Mon – Fri · 9AM – 6PM
+
+                </li>
+
+            </ul>
+
         </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2024 Stackly Studio. All rights reserved.</span>
-        <span>Designed & built in-house.</span>
-      </div>
-    </footer>
+
+        <!--==============================
+                NEWSLETTER
+        ===============================-->
+
+        <div class="newsletter">
+
+            <h4>Newsletter</h4>
+
+            <p>
+
+                Join thousands of founders, designers and developers
+                receiving monthly insights from Stackly.
+
+            </p>
+
+            <form class="newsletter-form">
+
+                <input
+
+                    type="email"
+
+                    placeholder="Enter your email"
+
+                    required>
+
+                <button type="submit">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+            <small>
+
+                No spam. Unsubscribe anytime.
+
+            </small>
+
+        </div>
+
+    </div>
+
+    <!--==============================
+            FOOTER BOTTOM
+    ===============================-->
+
+    <div class="footer-bottom">
+
+        <span>
+
+            © 2026 Stackly Studio. All rights reserved.
+
+        </span>
+
+        <!-- Social Icons -->
+
+        <div class="footer-social">
+
+            <a href="error.html" aria-label="Instagram">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+            <a href="error.html" aria-label="Behance">
+
+                <i class="fa-brands fa-behance"></i>
+
+            </a>
+
+            <a href="error.html" aria-label="Dribbble">
+
+                <i class="fa-brands fa-dribbble"></i>
+
+            </a>
+
+            <a href="error.html" aria-label="LinkedIn">
+
+                <i class="fa-brands fa-linkedin-in"></i>
+
+            </a>
+
+            <a href="error.html" aria-label="GitHub">
+
+                <i class="fa-brands fa-github"></i>
+
+            </a>
+
+            <a href="error.html" aria-label="Twitter">
+
+                <i class="fa-brands fa-x-twitter"></i>
+
+            </a>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="error.html">Privacy</a>
+
+            <a href="error.html">Terms</a>
+
+            <a href="error.html">Cookies</a>
+
+            <a href="error.html">Sitemap</a>
+
+        </div>
+
+    </div>
+
+</footer>
 
     <script type="module" src="js/comman.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>
