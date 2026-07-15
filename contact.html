@@ -85,7 +85,7 @@
             </div>
           </div>
         </li>
-        
+
       </ul>
 
       <!-- Desktop Only -->
@@ -133,7 +133,7 @@
             </div>
           </div>
 
-          <a href="#contact-form" class="hero-btn"> Start Your Project → </a>
+          <a href="error.html" class="hero-btn"> Start Your Project → </a>
         </div>
       </div>
 
@@ -195,29 +195,72 @@
             <span class="field-error" data-for="name"></span>
           </div>
 
-          <div class="field-row">
-            <div class="field">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="jane@company.com"
-                required
-              />
-              <span class="field-error" data-for="email"></span>
-            </div>
-            <div class="field">
-              <label for="company">Company <em>(optional)</em></label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                placeholder="Acme Inc."
-              />
-              <span class="field-error" data-for="company"></span>
-            </div>
-          </div>
+          <!-- EMAIL + PHONE -->
+
+<div class="field-row">
+
+    <div class="field">
+
+        <label for="email">
+
+            Email
+
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="jane@company.com"
+            required>
+
+        <span class="field-error" data-for="email"></span>
+
+    </div>
+
+    <div class="field">
+
+        <label for="phone">
+
+            Phone Number
+
+        </label>
+
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            maxlength="10"
+            inputmode="numeric"
+            oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+            placeholder="Enter Number"
+            required>
+
+        <span class="field-error" data-for="phone"></span>
+
+    </div>
+
+</div>
+
+<!-- COMPANY -->
+
+<div class="field">
+
+    <label for="company">
+
+        Company <em>(optional)</em>
+
+    </label>
+
+    <input
+        type="text"
+        id="company"
+        name="company"
+        placeholder="Acme Inc.">
+
+    <span class="field-error" data-for="company"></span>
+
+</div>
 
           <div class="field">
             <label>Budget</label>
