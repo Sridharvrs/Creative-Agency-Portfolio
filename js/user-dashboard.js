@@ -69,3 +69,38 @@ document
     window.location.href = "login.html";
 
 });
+
+
+// ==========================================================
+
+const menuToggle = document.getElementById("menuToggle");
+const sidebar = document.querySelector(".sidebar");
+const overlay = document.getElementById("sidebarOverlay");
+
+menuToggle.addEventListener("click", () => {
+
+    sidebar.classList.toggle("active");
+
+    overlay.classList.toggle("show");
+
+    document.body.classList.toggle("menu-open");
+
+});
+
+overlay.addEventListener("click", closeMenu);
+
+document.querySelectorAll(".nav-item").forEach(item => {
+
+    item.addEventListener("click", closeMenu);
+
+});
+
+function closeMenu(){
+
+    sidebar.classList.remove("active");
+
+    overlay.classList.remove("show");
+
+    document.body.classList.remove("menu-open");
+
+}

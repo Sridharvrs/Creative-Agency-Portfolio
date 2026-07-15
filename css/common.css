@@ -31,7 +31,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -98,7 +98,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: none;
   flex-direction: column;
   gap: 5px;
-  z-index: 101;
+  z-index: 1002;
 }
 .nav-toggle span {
   width: 26px; height: 2px;
@@ -266,7 +266,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
     transition:.45s cubic-bezier(.22,1,.36,1);
 
-    z-index:100;
+    z-index:1001;
 
     box-shadow:-20px 0 60px rgba(0,0,0,.45);
 
@@ -334,6 +334,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 /*=========================*/
+/*==================================
+        MOBILE CONTACT
+==================================*/
 
 .mobile-contact{
 
@@ -343,13 +346,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
     margin-top:auto;
 
-    padding-top:30px;
+    padding-top:28px;
 
     border-top:1px solid rgba(255,255,255,.08);
 
 }
 
-.mobile-contact h4{
+.contact-heading{
 
     font-size:13px;
 
@@ -357,21 +360,75 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
     letter-spacing:2px;
 
-    color:#888;
+    color:#8d8d98;
+
+    margin-bottom:22px;
+
+    font-weight:700;
+
+}
+
+/*==============================*/
+
+.contact-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
 
     margin-bottom:18px;
 
 }
 
-.mobile-contact p{
+.contact-item i{
 
-    color:#bfbfbf;
+    width:42px;
+
+    height:42px;
+
+    border-radius:12px;
+
+    background:rgba(255,90,60,.12);
+
+    color:var(--accent);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:16px;
+
+    flex-shrink:0;
+
+}
+
+.contact-item span{
+
+    display:block;
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1.5px;
+
+    color:#8d8d98;
+
+    margin-bottom:4px;
+
+}
+
+.contact-item p{
+
+    color:#fff;
 
     font-size:15px;
 
-    margin-bottom:12px;
-
-    line-height:24px;
+    line-height:22px;
 
 }
 
@@ -379,6 +436,68 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 nav{
     padding-bottom: 0;
+}
+
+/*=========================
+        MOBILE LINKS
+=========================*/
+
+.nav-links li{
+
+    width:100%;
+
+}
+
+.nav-links a{
+
+    display:flex;
+
+    align-items:center;
+
+    width:100%;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    color:#d4d4d4;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:.35s;
+
+}
+
+.nav-links a::after{
+
+    display:none;
+
+}
+
+/* Hover */
+
+.nav-links a:hover{
+
+    background:rgba(255,90,60,.12);
+
+    color:#fff;
+
+}
+
+/* Active */
+
+.nav-links a.active{
+
+    background:rgba(255,90,60,.18);
+
+    color:var(--accent);
+
+    font-weight:600;
+
+    /* border-left:4px solid var(--accent); */
+
 }
 
 
@@ -455,7 +574,7 @@ body.menu-open{
     font-size:90px;
     font-weight:800;
     color:transparent;
-    -webkit-text-stroke:1px rgba(255,255,255,.18);
+    -webkit-text-stroke:1px rgba(255, 244, 244, 0.18);
     letter-spacing:-3px;
     white-space:nowrap;
 }
@@ -696,7 +815,7 @@ body.menu-open{
 
 .newsletter-form input::placeholder{
 
-    color:#777;
+    color:#e0dcdc;
 
 }
 
@@ -800,7 +919,7 @@ body.menu-open{
 
     background:#151B27;
 
-    color:#cfcfcf;
+    color:#ffffff;
 
     text-decoration:none;
 

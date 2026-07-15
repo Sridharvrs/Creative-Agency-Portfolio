@@ -546,7 +546,7 @@ font-size:32px;
     padding:0 18px;
     border:1px solid var(--border);
     border-radius:16px;
-    background:#111418;
+    background:#21262c;
     color:#fff;
     font-size:15px;
     outline:none;
@@ -554,7 +554,7 @@ font-size:32px;
 }
 
 .input-box input::placeholder{
-    color:#777;
+    color:#d1cccc;
 }
 
 .input-box input:focus{
