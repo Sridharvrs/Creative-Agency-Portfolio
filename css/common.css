@@ -573,8 +573,8 @@ body.menu-open{
     font-family:"Space Grotesk",sans-serif;
     font-size:90px;
     font-weight:800;
-    color:transparent;
-    -webkit-text-stroke:1px rgba(255, 244, 244, 0.18);
+    color:rgba(135, 129, 118, 0.559);
+    -webkit-text-stroke:1px rgba(255, 255, 255, 0.18);
     letter-spacing:-3px;
     white-space:nowrap;
 }
